@@ -11,15 +11,15 @@ namespace WebClientWinForms
          InitializeComponent();
 
          WebClient client = new WebClient();
-         Stream strm = client.OpenRead("http://www.reuters.com");
-         StreamReader Reader = new StreamReader(strm);
+         Stream scanner = client.OpenRead("http://www.reuters.com");
+         StreamReader reader = new StreamReader(scanner);
          string line;
-         while ((line = Reader.ReadLine()) != null)
+         while ((line = reader.ReadLine()) != null)
          {
             listBox1.Items.Add(line);
          }
 
-         strm.Close();
+         scanner.Close();
       }
    }
 }
