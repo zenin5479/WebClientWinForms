@@ -1,1 +1,1 @@
-# WebClientWinForms
+# Методы класса WebClient
