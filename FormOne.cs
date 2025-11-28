@@ -11,7 +11,7 @@ namespace WebClientWinForms
          InitializeComponent();
 
          WebClient client = new WebClient();
-         Stream scanner = client.OpenRead("https://api.binance.com/api/v3/time");
+         Stream scanner = client.OpenRead("https://example.com");
          if (scanner != null)
          {
             StreamReader reader = new StreamReader(scanner);
