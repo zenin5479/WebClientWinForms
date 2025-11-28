@@ -23,11 +23,6 @@ namespace WebClientWinForms
 
             scanner.Close();
          }
-
-         if (scanner != null)
-         {
-
-         }
       }
    }
 }
