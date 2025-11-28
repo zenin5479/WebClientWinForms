@@ -10,7 +10,7 @@ namespace WebClientWinForms
       {
          InitializeComponent();
 
-         System.Net.WebClient Client = new WebClient();
+         WebClient Client = new WebClient();
          Stream strm = Client.OpenRead("http://www.reuters.com");
          StreamReader sr = new StreamReader(strm);
          string line;
