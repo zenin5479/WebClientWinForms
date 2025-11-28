@@ -29,6 +29,7 @@
       private void InitializeComponent()
       {
          ListBoxReader = new System.Windows.Forms.ListBox();
+         TextBoxReader = new System.Windows.Forms.TextBox();
          SuspendLayout();
          // 
          // ListBoxReader
@@ -37,23 +38,34 @@
          ListBoxReader.ItemHeight = 15;
          ListBoxReader.Location = new System.Drawing.Point(12, 12);
          ListBoxReader.Name = "ListBoxReader";
-         ListBoxReader.Size = new System.Drawing.Size(379, 334);
+         ListBoxReader.Size = new System.Drawing.Size(175, 199);
          ListBoxReader.TabIndex = 0;
+         // 
+         // TextBoxReader
+         // 
+         TextBoxReader.Location = new System.Drawing.Point(12, 217);
+         TextBoxReader.Multiline = true;
+         TextBoxReader.Name = "TextBoxReader";
+         TextBoxReader.Size = new System.Drawing.Size(175, 132);
+         TextBoxReader.TabIndex = 1;
          // 
          // FormOne
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(403, 361);
+         Controls.Add(TextBoxReader);
          Controls.Add(ListBoxReader);
          Name = "FormOne";
          StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
          Text = "Класс WebClient";
          ResumeLayout(false);
+         PerformLayout();
       }
 
       #endregion
 
       private System.Windows.Forms.ListBox ListBoxReader;
+      private System.Windows.Forms.TextBox TextBoxReader;
    }
 }
