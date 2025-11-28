@@ -8,6 +8,5 @@ namespace WebClientWinForms
       {
          InitializeComponent();
       }
-
    }
 }
