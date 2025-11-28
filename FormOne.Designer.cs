@@ -46,6 +46,7 @@
          TextBoxReader.Location = new System.Drawing.Point(12, 217);
          TextBoxReader.Multiline = true;
          TextBoxReader.Name = "TextBoxReader";
+         TextBoxReader.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
          TextBoxReader.Size = new System.Drawing.Size(175, 132);
          TextBoxReader.TabIndex = 1;
          // 

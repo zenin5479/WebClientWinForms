@@ -19,6 +19,7 @@ namespace WebClientWinForms
             while ((line = reader.ReadLine()) != null)
             {
                ListBoxReader.Items.Add(line);
+               TextBoxReader.Text = line;
             }
 
             scanner.Close();
