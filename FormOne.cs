@@ -12,9 +12,9 @@ namespace WebClientWinForms
 
          WebClient client = new WebClient();
          Stream strm = client.OpenRead("http://www.reuters.com");
-         StreamReader sr = new StreamReader(strm);
+         StreamReader Reader = new StreamReader(strm);
          string line;
-         while ((line = sr.ReadLine()) != null)
+         while ((line = Reader.ReadLine()) != null)
          {
             listBox1.Items.Add(line);
          }
