@@ -28,13 +28,24 @@
       /// </summary>
       private void InitializeComponent()
       {
+         listBox1 = new System.Windows.Forms.ListBox();
          SuspendLayout();
+         // 
+         // listBox1
+         // 
+         listBox1.FormattingEnabled = true;
+         listBox1.ItemHeight = 15;
+         listBox1.Location = new System.Drawing.Point(12, 12);
+         listBox1.Name = "listBox1";
+         listBox1.Size = new System.Drawing.Size(379, 334);
+         listBox1.TabIndex = 0;
          // 
          // FormOne
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         ClientSize = new System.Drawing.Size(800, 450);
+         ClientSize = new System.Drawing.Size(403, 361);
+         Controls.Add(listBox1);
          Name = "FormOne";
          StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
          Text = "Класс WebClient";
@@ -42,5 +53,7 @@
       }
 
       #endregion
+
+      private System.Windows.Forms.ListBox listBox1;
    }
 }
