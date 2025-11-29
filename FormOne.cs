@@ -26,10 +26,6 @@ namespace WebClientWinForms
 
             scanner.Close();
          }
-         else
-         {
-            scanner.Close();
-         }
       }
    }
 }
