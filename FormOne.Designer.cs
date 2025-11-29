@@ -29,22 +29,33 @@
       private void InitializeComponent()
       {
          TextBoxReader = new System.Windows.Forms.TextBox();
+         button1 = new System.Windows.Forms.Button();
          SuspendLayout();
          // 
          // TextBoxReader
          // 
-         TextBoxReader.Location = new System.Drawing.Point(12, 12);
+         TextBoxReader.Location = new System.Drawing.Point(12, 41);
          TextBoxReader.Multiline = true;
          TextBoxReader.Name = "TextBoxReader";
          TextBoxReader.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-         TextBoxReader.Size = new System.Drawing.Size(379, 337);
+         TextBoxReader.Size = new System.Drawing.Size(384, 311);
          TextBoxReader.TabIndex = 1;
+         // 
+         // button1
+         // 
+         button1.Location = new System.Drawing.Point(12, 12);
+         button1.Name = "button1";
+         button1.Size = new System.Drawing.Size(75, 23);
+         button1.TabIndex = 2;
+         button1.Text = "button1";
+         button1.UseVisualStyleBackColor = true;
          // 
          // FormOne
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         ClientSize = new System.Drawing.Size(403, 361);
+         ClientSize = new System.Drawing.Size(408, 364);
+         Controls.Add(button1);
          Controls.Add(TextBoxReader);
          Name = "FormOne";
          StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -55,5 +66,6 @@
 
       #endregion
       private System.Windows.Forms.TextBox TextBoxReader;
+      private System.Windows.Forms.Button button1;
    }
 }
