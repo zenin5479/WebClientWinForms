@@ -10,6 +10,11 @@ namespace WebClientWinForms
       {
          InitializeComponent();
 
+
+      }
+
+      private void ButtonWebClient_Click(object sender, System.EventArgs e)
+      {
          WebClient client = new WebClient();
          Stream scanner = client.OpenRead("https://example.com");
          if (scanner != null)

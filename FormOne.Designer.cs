@@ -49,6 +49,7 @@
          ButtonWebClient.TabIndex = 2;
          ButtonWebClient.Text = "WebClient";
          ButtonWebClient.UseVisualStyleBackColor = true;
+         ButtonWebClient.Click += ButtonWebClient_Click;
          // 
          // FormOne
          // 
