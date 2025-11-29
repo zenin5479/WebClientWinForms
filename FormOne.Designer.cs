@@ -29,7 +29,7 @@
       private void InitializeComponent()
       {
          TextBoxReader = new System.Windows.Forms.TextBox();
-         button1 = new System.Windows.Forms.Button();
+         ButtonWebClient = new System.Windows.Forms.Button();
          SuspendLayout();
          // 
          // TextBoxReader
@@ -41,21 +41,21 @@
          TextBoxReader.Size = new System.Drawing.Size(384, 311);
          TextBoxReader.TabIndex = 1;
          // 
-         // button1
+         // ButtonWebClient
          // 
-         button1.Location = new System.Drawing.Point(12, 12);
-         button1.Name = "button1";
-         button1.Size = new System.Drawing.Size(75, 23);
-         button1.TabIndex = 2;
-         button1.Text = "button1";
-         button1.UseVisualStyleBackColor = true;
+         ButtonWebClient.Location = new System.Drawing.Point(12, 12);
+         ButtonWebClient.Name = "ButtonWebClient";
+         ButtonWebClient.Size = new System.Drawing.Size(75, 23);
+         ButtonWebClient.TabIndex = 2;
+         ButtonWebClient.Text = "WebClient";
+         ButtonWebClient.UseVisualStyleBackColor = true;
          // 
          // FormOne
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(408, 364);
-         Controls.Add(button1);
+         Controls.Add(ButtonWebClient);
          Controls.Add(TextBoxReader);
          Name = "FormOne";
          StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -66,6 +66,6 @@
 
       #endregion
       private System.Windows.Forms.TextBox TextBoxReader;
-      private System.Windows.Forms.Button button1;
+      private System.Windows.Forms.Button ButtonWebClient;
    }
 }
