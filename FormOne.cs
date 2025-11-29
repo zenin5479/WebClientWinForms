@@ -9,8 +9,6 @@ namespace WebClientWinForms
       public FormOne()
       {
          InitializeComponent();
-
-
       }
 
       private void ButtonWebClient_Click(object sender, System.EventArgs e)
@@ -26,6 +24,10 @@ namespace WebClientWinForms
                TextBoxReader.Text = line;
             }
 
+            scanner.Close();
+         }
+         else
+         {
             scanner.Close();
          }
       }
