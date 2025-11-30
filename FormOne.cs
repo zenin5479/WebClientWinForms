@@ -1,7 +1,7 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using System.Net;
 using System.Windows.Forms;
-using static System.Windows.Forms.LinkLabel;
 
 namespace WebClientWinForms
 {
@@ -44,17 +44,25 @@ namespace WebClientWinForms
             scanner.Close();
          }
 
-
-
-
          WebRequest wrq = WebRequest.Create("https://example.com"); HttpWebRequest hwrq = (HttpWebRequest)wrq;
 
          string lineone = ("Request Timeout (ms) = " + wrq.Timeout);
          TextBoxReader.Text = lineone;
+         TextBoxReader.Text = Environment.NewLine;
          string linetwo = ("Request Keep Alive = " + hwrq.KeepAlive);
-         TextBoxReader.Text= linetwo;
+         TextBoxReader.Text = linetwo;
          string linethree = ("Request AllowAutoRedirect = " + hwrq.AllowAutoRedirect);
          TextBoxReader.Text = linethree;
+
+         TextBoxReader.Text = string.Format("{0:f2}", 1.0 / 3.0);
+         TextBoxReader.SelectionStart = TextBoxReader.Text.Length;
+         TextBoxReader.ScrollToCaret();
+         TextBoxReader.Text = "First line" + Environment.NewLine;
+         TextBoxReader.Text = "Second line" + Environment.NewLine;
+         TextBoxReader.Text = "Third line";
+
+
+
 
          listBox1.Items.Add("Request Timeout (ms) = " + wrq.Timeout);
          listBox1.Items.Add("Request Keep Alive = " + hwrq.KeepAlive);
