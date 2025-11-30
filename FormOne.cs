@@ -55,8 +55,6 @@ namespace WebClientWinForms
          TextBoxReader.Text = linethree;
 
          TextBoxReader.Text = string.Format("{0:f2}", 1.0 / 3.0);
-         TextBoxReader.SelectionStart = TextBoxReader.Text.Length;
-         TextBoxReader.ScrollToCaret();
          TextBoxReader.Text = "First line" + Environment.NewLine;
          TextBoxReader.Text = "Second line" + Environment.NewLine;
          TextBoxReader.Text = "Third line";

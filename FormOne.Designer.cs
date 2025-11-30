@@ -31,6 +31,7 @@
          TextBoxReader = new System.Windows.Forms.TextBox();
          ButtonWebClient = new System.Windows.Forms.Button();
          listBox1 = new System.Windows.Forms.ListBox();
+         richTextBox1 = new System.Windows.Forms.RichTextBox();
          SuspendLayout();
          // 
          // TextBoxReader
@@ -39,7 +40,7 @@
          TextBoxReader.Multiline = true;
          TextBoxReader.Name = "TextBoxReader";
          TextBoxReader.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-         TextBoxReader.Size = new System.Drawing.Size(384, 311);
+         TextBoxReader.Size = new System.Drawing.Size(384, 180);
          TextBoxReader.TabIndex = 1;
          // 
          // ButtonWebClient
@@ -58,14 +59,24 @@
          listBox1.ItemHeight = 15;
          listBox1.Location = new System.Drawing.Point(402, 41);
          listBox1.Name = "listBox1";
-         listBox1.Size = new System.Drawing.Size(357, 304);
+         listBox1.Size = new System.Drawing.Size(357, 184);
          listBox1.TabIndex = 3;
+         // 
+         // richTextBox1
+         // 
+         richTextBox1.Location = new System.Drawing.Point(12, 227);
+         richTextBox1.Name = "richTextBox1";
+         richTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Horizontal;
+         richTextBox1.Size = new System.Drawing.Size(384, 261);
+         richTextBox1.TabIndex = 4;
+         richTextBox1.Text = "";
          // 
          // FormOne
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         ClientSize = new System.Drawing.Size(771, 364);
+         ClientSize = new System.Drawing.Size(771, 500);
+         Controls.Add(richTextBox1);
          Controls.Add(listBox1);
          Controls.Add(ButtonWebClient);
          Controls.Add(TextBoxReader);
@@ -80,5 +91,6 @@
       private System.Windows.Forms.TextBox TextBoxReader;
       private System.Windows.Forms.Button ButtonWebClient;
       private System.Windows.Forms.ListBox listBox1;
+      private System.Windows.Forms.RichTextBox richTextBox1;
    }
 }
