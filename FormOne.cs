@@ -1,6 +1,7 @@
 ﻿using System.IO;
 using System.Net;
 using System.Windows.Forms;
+using static System.Windows.Forms.LinkLabel;
 
 namespace WebClientWinForms
 {
@@ -47,6 +48,14 @@ namespace WebClientWinForms
 
 
          WebRequest wrq = WebRequest.Create("https://example.com"); HttpWebRequest hwrq = (HttpWebRequest)wrq;
+
+         string lineone = ("Request Timeout (ms) = " + wrq.Timeout);
+         TextBoxReader.Text = lineone;
+         string linetwo = ("Request Keep Alive = " + hwrq.KeepAlive);
+         TextBoxReader.Text= linetwo;
+         string linethree = ("Request AllowAutoRedirect = " + hwrq.AllowAutoRedirect);
+         TextBoxReader.Text = linethree;
+
          listBox1.Items.Add("Request Timeout (ms) = " + wrq.Timeout);
          listBox1.Items.Add("Request Keep Alive = " + hwrq.KeepAlive);
          listBox1.Items.Add("Request AllowAutoRedirect = " + hwrq.AllowAutoRedirect);
