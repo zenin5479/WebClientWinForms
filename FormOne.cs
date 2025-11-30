@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.IO;
 using System.Net;
 using System.Windows.Forms;
@@ -59,8 +60,11 @@ namespace WebClientWinForms
          TextBoxReader.Text = "Second line" + Environment.NewLine;
          TextBoxReader.Text = "Third line";
 
-
-
+         
+         RichTextBoxSavelog.AppendText(lineone+"\n");
+         RichTextBoxSavelog.AppendText(Environment.NewLine + linetwo);
+         RichTextBoxSavelog.AppendText(Environment.NewLine + linethree);
+         RichTextBoxSavelog.ScrollToCaret();
 
          listBox1.Items.Add("Request Timeout (ms) = " + wrq.Timeout);
          listBox1.Items.Add("Request Keep Alive = " + hwrq.KeepAlive);

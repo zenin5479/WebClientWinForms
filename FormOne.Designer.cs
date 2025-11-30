@@ -31,7 +31,7 @@
          TextBoxReader = new System.Windows.Forms.TextBox();
          ButtonWebClient = new System.Windows.Forms.Button();
          listBox1 = new System.Windows.Forms.ListBox();
-         richTextBox1 = new System.Windows.Forms.RichTextBox();
+         RichTextBoxSavelog = new System.Windows.Forms.RichTextBox();
          SuspendLayout();
          // 
          // TextBoxReader
@@ -62,21 +62,21 @@
          listBox1.Size = new System.Drawing.Size(357, 184);
          listBox1.TabIndex = 3;
          // 
-         // richTextBox1
+         // RichTextBoxSavelog
          // 
-         richTextBox1.Location = new System.Drawing.Point(12, 227);
-         richTextBox1.Name = "richTextBox1";
-         richTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Horizontal;
-         richTextBox1.Size = new System.Drawing.Size(384, 261);
-         richTextBox1.TabIndex = 4;
-         richTextBox1.Text = "";
+         RichTextBoxSavelog.Location = new System.Drawing.Point(12, 227);
+         RichTextBoxSavelog.Name = "RichTextBoxSavelog";
+         RichTextBoxSavelog.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Horizontal;
+         RichTextBoxSavelog.Size = new System.Drawing.Size(384, 261);
+         RichTextBoxSavelog.TabIndex = 4;
+         RichTextBoxSavelog.Text = "";
          // 
          // FormOne
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(771, 500);
-         Controls.Add(richTextBox1);
+         Controls.Add(RichTextBoxSavelog);
          Controls.Add(listBox1);
          Controls.Add(ButtonWebClient);
          Controls.Add(TextBoxReader);
@@ -91,6 +91,6 @@
       private System.Windows.Forms.TextBox TextBoxReader;
       private System.Windows.Forms.Button ButtonWebClient;
       private System.Windows.Forms.ListBox listBox1;
-      private System.Windows.Forms.RichTextBox richTextBox1;
+      private System.Windows.Forms.RichTextBox RichTextBoxSavelog;
    }
 }
