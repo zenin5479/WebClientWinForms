@@ -10,7 +10,7 @@ namespace WebClientWinForms
       {
          InitializeComponent();
 
-         WebRequest wrq = WebRequest.Create("http://www.reuters.com"); WebResponse wrs = wrq.GetResponse();
+         WebRequest wrq = WebRequest.Create("https://example.com"); WebResponse wrs = wrq.GetResponse();
          Stream strm = wrs.GetResponseStream();
          if (strm != null)
          {
@@ -24,9 +24,6 @@ namespace WebClientWinForms
             sr.Close();
             strm.Close();
          }
-
-
-
       }
 
       private void ButtonWebClient_Click(object sender, System.EventArgs e)
