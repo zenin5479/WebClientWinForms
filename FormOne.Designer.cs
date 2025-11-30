@@ -30,6 +30,7 @@
       {
          TextBoxReader = new System.Windows.Forms.TextBox();
          ButtonWebClient = new System.Windows.Forms.Button();
+         listBox1 = new System.Windows.Forms.ListBox();
          SuspendLayout();
          // 
          // TextBoxReader
@@ -51,11 +52,21 @@
          ButtonWebClient.UseVisualStyleBackColor = true;
          ButtonWebClient.Click += ButtonWebClient_Click;
          // 
+         // listBox1
+         // 
+         listBox1.FormattingEnabled = true;
+         listBox1.ItemHeight = 15;
+         listBox1.Location = new System.Drawing.Point(402, 41);
+         listBox1.Name = "listBox1";
+         listBox1.Size = new System.Drawing.Size(357, 304);
+         listBox1.TabIndex = 3;
+         // 
          // FormOne
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         ClientSize = new System.Drawing.Size(408, 364);
+         ClientSize = new System.Drawing.Size(771, 364);
+         Controls.Add(listBox1);
          Controls.Add(ButtonWebClient);
          Controls.Add(TextBoxReader);
          Name = "FormOne";
@@ -68,5 +79,6 @@
       #endregion
       private System.Windows.Forms.TextBox TextBoxReader;
       private System.Windows.Forms.Button ButtonWebClient;
+      private System.Windows.Forms.ListBox listBox1;
    }
 }
