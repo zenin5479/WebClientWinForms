@@ -59,7 +59,6 @@ namespace WebClientWinForms
          TextBoxReader.Text = "First line" + Environment.NewLine;
          TextBoxReader.Text = "Second line" + Environment.NewLine;
          TextBoxReader.Text = "Third line";
-
          
          RichTextBoxSavelog.AppendText(lineone+"\n");
          RichTextBoxSavelog.AppendText(Environment.NewLine + linetwo);
