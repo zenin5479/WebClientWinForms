@@ -63,11 +63,14 @@ namespace WebClientWinForms
          RichTextBoxSavelog.AppendText(lineone+"\n");
          RichTextBoxSavelog.AppendText(Environment.NewLine + linetwo);
          RichTextBoxSavelog.AppendText(Environment.NewLine + linethree);
+         RichTextBoxSavelog.AppendText(string.Format("Header {0}: {1}", wrq.Timeout, hwrq.KeepAlive));
+
          RichTextBoxSavelog.ScrollToCaret();
 
          listBox1.Items.Add("Request Timeout (ms) = " + wrq.Timeout);
          listBox1.Items.Add("Request Keep Alive = " + hwrq.KeepAlive);
          listBox1.Items.Add("Request AllowAutoRedirect = " + hwrq.AllowAutoRedirect);
+         listBox1.Items.Add(string.Format("Header {0}: {1}", wrq.Timeout, hwrq.KeepAlive));
       }
    }
 }
