@@ -1,7 +1,6 @@
 ﻿using System.IO;
 using System.Net;
 using System.Windows.Forms;
-using static System.Windows.Forms.LinkLabel;
 
 namespace WebClientWinForms
 {
@@ -10,6 +9,24 @@ namespace WebClientWinForms
       public FormOne()
       {
          InitializeComponent();
+
+         WebRequest wrq = WebRequest.Create("http://www.reuters.com"); WebResponse wrs = wrq.GetResponse();
+         Stream strm = wrs.GetResponseStream();
+         if (strm != null)
+         {
+            StreamReader sr = new StreamReader(strm);
+            string line;
+            while ((line = sr.ReadLine()) != null)
+            {
+               listBox1.Items.Add(line);
+            }
+
+            sr.Close();
+            strm.Close();
+         }
+
+
+
       }
 
       private void ButtonWebClient_Click(object sender, System.EventArgs e)
@@ -28,6 +45,9 @@ namespace WebClientWinForms
 
             scanner.Close();
          }
+
+
+
 
          WebRequest wrq = WebRequest.Create("https://example.com"); HttpWebRequest hwrq = (HttpWebRequest)wrq;
          listBox1.Items.Add("Request Timeout (ms) = " + wrq.Timeout);
