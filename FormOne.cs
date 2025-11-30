@@ -29,8 +29,7 @@ namespace WebClientWinForms
             scanner.Close();
          }
 
-
-         WebRequest wrq = WebRequest.Create("http://www.reuters.com"); HttpWebRequest hwrq = (HttpWebRequest)wrq;
+         WebRequest wrq = WebRequest.Create("https://example.com"); HttpWebRequest hwrq = (HttpWebRequest)wrq;
          listBox1.Items.Add("Request Timeout (ms) = " + wrq.Timeout);
          listBox1.Items.Add("Request Keep Alive = " + hwrq.KeepAlive);
          listBox1.Items.Add("Request AllowAutoRedirect = " + hwrq.AllowAutoRedirect);
