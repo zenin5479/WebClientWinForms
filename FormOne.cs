@@ -33,22 +33,23 @@ namespace WebClientWinForms
       private void ButtonWebRequest_Click(object sender, EventArgs e)
       {
          WebRequest request = WebRequest.Create("https://example.com"); 
-         WebResponse Response = request.GetResponse();
-         Stream scanner = Response.GetResponseStream();
+         WebResponse response = request.GetResponse();
+         Stream scanner = response.GetResponseStream();
          if (scanner != null)
          {
-            StreamReader sr = new StreamReader(scanner);
+            StreamReader reader = new StreamReader(scanner);
             string line;
-            while ((line = sr.ReadLine()) != null)
+            while ((line = reader.ReadLine()) != null)
             {
                listBox1.Items.Add(line);
             }
 
-            sr.Close();
+            reader.Close();
             scanner.Close();
          }
 
-         WebRequest wr = WebRequest.Create("https://example.com"); HttpWebRequest hwrq = (HttpWebRequest)wr;
+         WebRequest wr = WebRequest.Create("https://example.com"); 
+         HttpWebRequest hwrq = (HttpWebRequest)wr;
 
          string lineone = ("Request Timeout (ms) = " + wr.Timeout);
          TextBoxReader.Text = lineone;
