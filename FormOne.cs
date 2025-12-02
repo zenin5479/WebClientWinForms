@@ -52,12 +52,15 @@ namespace WebClientWinForms
          WebRequest ask = WebRequest.Create("https://example.com");
          HttpWebRequest httpask = (HttpWebRequest)ask;
 
-         string lineone = ("Request Timeout (ms) = " + ask.Timeout);
+         string lineone = ("Время ожидания запроса (мс) = " + ask.Timeout);
          TextBoxReader.Text = lineone;
          TextBoxReader.Text = Environment.NewLine;
-         string linetwo = ("Request Keep Alive = " + httpask.KeepAlive);
+
+         // Задает значение, указывающее, следует ли выполнять постоянное подключение к интернет-ресурсу
+         string linetwo = ("Запрос постоянно поддерживать= " + httpask.KeepAlive);
          TextBoxReader.Text = linetwo;
-         string linethree = ("Request AllowAutoRedirect = " + httpask.AllowAutoRedirect);
+         // Задает значение, указывающее, должен ли запрос следовать ответам перенаправления
+         string linethree = ("Запрос поддерживает перенаправление = " + httpask.AllowAutoRedirect);
          TextBoxReader.Text = linethree;
 
          TextBoxReader.Text = string.Format("{0:f2}", 1.0 / 3.0);
@@ -73,7 +76,7 @@ namespace WebClientWinForms
 
          RichTextBoxReader.ScrollToCaret();
 
-         ListBoxReader.Items.Add("Request Timeout (ms) = " + ask.Timeout);
+         ListBoxReader.Items.Add("Время ожидания запроса (мс) = " + ask.Timeout);
          ListBoxReader.Items.Add("Request Keep Alive = " + httpask.KeepAlive);
          ListBoxReader.Items.Add("Request AllowAutoRedirect = " + httpask.AllowAutoRedirect);
          ListBoxReader.Items.Add(string.Format("Header {0}: {1}", ask.Timeout, httpask.KeepAlive));
