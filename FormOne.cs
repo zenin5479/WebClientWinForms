@@ -65,12 +65,12 @@ namespace WebClientWinForms
          TextBoxReader.Text = "Third line";
          TextBoxReader.Text = (string.Format("Header {0}: {1}", ask.Timeout, httpask.KeepAlive)); //
 
-         RichTextBoxSavelog.AppendText(lineone + "\n");
-         RichTextBoxSavelog.AppendText(Environment.NewLine + linetwo);
-         RichTextBoxSavelog.AppendText(Environment.NewLine + linethree);
-         RichTextBoxSavelog.AppendText(string.Format("Header {0}: {1}", ask.Timeout, httpask.KeepAlive)); //
+         RichTextBoxReader.AppendText(lineone + "\n");
+         RichTextBoxReader.AppendText(Environment.NewLine + linetwo);
+         RichTextBoxReader.AppendText(Environment.NewLine + linethree);
+         RichTextBoxReader.AppendText(string.Format("Header {0}: {1}", ask.Timeout, httpask.KeepAlive)); //
 
-         RichTextBoxSavelog.ScrollToCaret();
+         RichTextBoxReader.ScrollToCaret();
 
          ListBoxReader.Items.Add("Request Timeout (ms) = " + ask.Timeout);
          ListBoxReader.Items.Add("Request Keep Alive = " + httpask.KeepAlive);

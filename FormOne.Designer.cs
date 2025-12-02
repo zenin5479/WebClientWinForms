@@ -31,7 +31,7 @@
          TextBoxReader = new System.Windows.Forms.TextBox();
          ButtonWebClient = new System.Windows.Forms.Button();
          ListBoxReader = new System.Windows.Forms.ListBox();
-         RichTextBoxSavelog = new System.Windows.Forms.RichTextBox();
+         RichTextBoxReader = new System.Windows.Forms.RichTextBox();
          ButtonWebRequest = new System.Windows.Forms.Button();
          SuspendLayout();
          // 
@@ -63,14 +63,14 @@
          ListBoxReader.Size = new System.Drawing.Size(357, 184);
          ListBoxReader.TabIndex = 3;
          // 
-         // RichTextBoxSavelog
+         // RichTextBoxReader
          // 
-         RichTextBoxSavelog.Location = new System.Drawing.Point(12, 227);
-         RichTextBoxSavelog.Name = "RichTextBoxSavelog";
-         RichTextBoxSavelog.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Horizontal;
-         RichTextBoxSavelog.Size = new System.Drawing.Size(384, 261);
-         RichTextBoxSavelog.TabIndex = 4;
-         RichTextBoxSavelog.Text = "";
+         RichTextBoxReader.Location = new System.Drawing.Point(12, 227);
+         RichTextBoxReader.Name = "RichTextBoxReader";
+         RichTextBoxReader.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Horizontal;
+         RichTextBoxReader.Size = new System.Drawing.Size(384, 261);
+         RichTextBoxReader.TabIndex = 4;
+         RichTextBoxReader.Text = "";
          // 
          // ButtonWebRequest
          // 
@@ -88,7 +88,7 @@
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(771, 500);
          Controls.Add(ButtonWebRequest);
-         Controls.Add(RichTextBoxSavelog);
+         Controls.Add(RichTextBoxReader);
          Controls.Add(ListBoxReader);
          Controls.Add(ButtonWebClient);
          Controls.Add(TextBoxReader);
@@ -103,7 +103,7 @@
       private System.Windows.Forms.TextBox TextBoxReader;
       private System.Windows.Forms.Button ButtonWebClient;
       private System.Windows.Forms.ListBox ListBoxReader;
-      private System.Windows.Forms.RichTextBox RichTextBoxSavelog;
+      private System.Windows.Forms.RichTextBox RichTextBoxReader;
       private System.Windows.Forms.Button ButtonWebRequest;
    }
 }
