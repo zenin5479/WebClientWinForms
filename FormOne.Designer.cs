@@ -74,12 +74,13 @@
          // 
          // ButtonWebRequest
          // 
-         ButtonWebRequest.Location = new System.Drawing.Point(209, 12);
+         ButtonWebRequest.Location = new System.Drawing.Point(108, 12);
          ButtonWebRequest.Name = "ButtonWebRequest";
          ButtonWebRequest.Size = new System.Drawing.Size(90, 23);
          ButtonWebRequest.TabIndex = 5;
          ButtonWebRequest.Text = "WebRequest";
          ButtonWebRequest.UseVisualStyleBackColor = true;
+         ButtonWebRequest.Click += ButtonWebRequest_Click;
          // 
          // FormOne
          // 
