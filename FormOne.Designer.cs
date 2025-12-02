@@ -91,6 +91,7 @@
          ButtonClear.TabIndex = 6;
          ButtonClear.Text = "Clear";
          ButtonClear.UseVisualStyleBackColor = true;
+         ButtonClear.Click += ButtonClear_Click;
          // 
          // FormOne
          // 

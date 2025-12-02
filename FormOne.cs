@@ -77,5 +77,12 @@ namespace WebClientWinForms
          ListBoxReader.Items.Add("Request AllowAutoRedirect = " + httpask.AllowAutoRedirect);
          ListBoxReader.Items.Add(string.Format("Header {0}: {1}", ask.Timeout, httpask.KeepAlive));
       }
+
+      private void ButtonClear_Click(object sender, EventArgs e)
+      {
+         TextBoxReader.Clear();
+         RichTextBoxReader.Clear();
+         ListBoxReader.ClearSelected();
+      }
    }
 }
