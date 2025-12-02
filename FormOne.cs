@@ -32,12 +32,12 @@ namespace WebClientWinForms
 
       private void ButtonWebRequest_Click(object sender, EventArgs e)
       {
-         WebRequest Request = WebRequest.Create("https://example.com"); 
-         WebResponse wrs = Request.GetResponse();
-         Stream strm = wrs.GetResponseStream();
-         if (strm != null)
+         WebRequest request = WebRequest.Create("https://example.com"); 
+         WebResponse Response = request.GetResponse();
+         Stream scanner = Response.GetResponseStream();
+         if (scanner != null)
          {
-            StreamReader sr = new StreamReader(strm);
+            StreamReader sr = new StreamReader(scanner);
             string line;
             while ((line = sr.ReadLine()) != null)
             {
@@ -45,7 +45,7 @@ namespace WebClientWinForms
             }
 
             sr.Close();
-            strm.Close();
+            scanner.Close();
          }
 
          WebRequest wr = WebRequest.Create("https://example.com"); HttpWebRequest hwrq = (HttpWebRequest)wr;
