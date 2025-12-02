@@ -23,7 +23,7 @@ namespace WebClientWinForms
             while ((line = reader.ReadLine()) != null)
             {
                TextBoxReader.Text = line;
-               listBox1.Items.Add(line);
+               ListBoxReader.Items.Add(line);
             }
 
             scanner.Close();
@@ -32,7 +32,7 @@ namespace WebClientWinForms
 
       private void ButtonWebRequest_Click(object sender, EventArgs e)
       {
-         WebRequest request = WebRequest.Create("https://example.com"); 
+         WebRequest request = WebRequest.Create("https://example.com");
          WebResponse response = request.GetResponse();
          Stream scanner = response.GetResponseStream();
          if (scanner != null)
@@ -41,14 +41,14 @@ namespace WebClientWinForms
             string line;
             while ((line = reader.ReadLine()) != null)
             {
-               listBox1.Items.Add(line);
+               ListBoxReader.Items.Add(line);
             }
 
             reader.Close();
             scanner.Close();
          }
 
-         WebRequest ask = WebRequest.Create("https://example.com"); 
+         WebRequest ask = WebRequest.Create("https://example.com");
          HttpWebRequest httpask = (HttpWebRequest)ask;
 
          string lineone = ("Request Timeout (ms) = " + ask.Timeout);
@@ -72,11 +72,10 @@ namespace WebClientWinForms
 
          RichTextBoxSavelog.ScrollToCaret();
 
-         listBox1.Items.Add("Request Timeout (ms) = " + ask.Timeout);
-         listBox1.Items.Add("Request Keep Alive = " + httpask.KeepAlive);
-         listBox1.Items.Add("Request AllowAutoRedirect = " + httpask.AllowAutoRedirect);
-         listBox1.Items.Add(string.Format("Header {0}: {1}", ask.Timeout, httpask.KeepAlive));
-
+         ListBoxReader.Items.Add("Request Timeout (ms) = " + ask.Timeout);
+         ListBoxReader.Items.Add("Request Keep Alive = " + httpask.KeepAlive);
+         ListBoxReader.Items.Add("Request AllowAutoRedirect = " + httpask.AllowAutoRedirect);
+         ListBoxReader.Items.Add(string.Format("Header {0}: {1}", ask.Timeout, httpask.KeepAlive));
       }
    }
 }

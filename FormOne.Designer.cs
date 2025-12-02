@@ -30,7 +30,7 @@
       {
          TextBoxReader = new System.Windows.Forms.TextBox();
          ButtonWebClient = new System.Windows.Forms.Button();
-         listBox1 = new System.Windows.Forms.ListBox();
+         ListBoxReader = new System.Windows.Forms.ListBox();
          RichTextBoxSavelog = new System.Windows.Forms.RichTextBox();
          ButtonWebRequest = new System.Windows.Forms.Button();
          SuspendLayout();
@@ -54,14 +54,14 @@
          ButtonWebClient.UseVisualStyleBackColor = true;
          ButtonWebClient.Click += ButtonWebClient_Click;
          // 
-         // listBox1
+         // ListBoxReader
          // 
-         listBox1.FormattingEnabled = true;
-         listBox1.ItemHeight = 15;
-         listBox1.Location = new System.Drawing.Point(402, 41);
-         listBox1.Name = "listBox1";
-         listBox1.Size = new System.Drawing.Size(357, 184);
-         listBox1.TabIndex = 3;
+         ListBoxReader.FormattingEnabled = true;
+         ListBoxReader.ItemHeight = 15;
+         ListBoxReader.Location = new System.Drawing.Point(402, 41);
+         ListBoxReader.Name = "ListBoxReader";
+         ListBoxReader.Size = new System.Drawing.Size(357, 184);
+         ListBoxReader.TabIndex = 3;
          // 
          // RichTextBoxSavelog
          // 
@@ -89,7 +89,7 @@
          ClientSize = new System.Drawing.Size(771, 500);
          Controls.Add(ButtonWebRequest);
          Controls.Add(RichTextBoxSavelog);
-         Controls.Add(listBox1);
+         Controls.Add(ListBoxReader);
          Controls.Add(ButtonWebClient);
          Controls.Add(TextBoxReader);
          Name = "FormOne";
@@ -102,7 +102,7 @@
       #endregion
       private System.Windows.Forms.TextBox TextBoxReader;
       private System.Windows.Forms.Button ButtonWebClient;
-      private System.Windows.Forms.ListBox listBox1;
+      private System.Windows.Forms.ListBox ListBoxReader;
       private System.Windows.Forms.RichTextBox RichTextBoxSavelog;
       private System.Windows.Forms.Button ButtonWebRequest;
    }
