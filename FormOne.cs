@@ -26,7 +26,7 @@ namespace WebClientWinForms
                ListBoxReader.Items.Add(line);
                RichTextBoxReader.AppendText(line);
             }
-
+            
             scanner.Close();
          }
       }
