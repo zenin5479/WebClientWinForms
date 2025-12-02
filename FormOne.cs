@@ -51,7 +51,6 @@ namespace WebClientWinForms
 
          WebRequest ask = WebRequest.Create("https://example.com");
          HttpWebRequest httpask = (HttpWebRequest)ask;
-
          string lineone = ("Время ожидания запроса (мс) = " + ask.Timeout);
          TextBoxReader.Text = lineone;
          TextBoxReader.Text = Environment.NewLine;
