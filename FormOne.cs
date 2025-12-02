@@ -33,10 +33,6 @@ namespace WebClientWinForms
 
             scanner.Close();
          }
-
-        
-
-
       }
 
       private void ButtonWebRequest_Click(object sender, EventArgs e)
@@ -51,8 +47,8 @@ namespace WebClientWinForms
             while ((line = reader.ReadLine()) != null)
             {
                ListBoxReader.Items.Add(line);
-               TextBoxReader.Text += line + Environment.NewLine;
-               TextBoxReader.Text += line + '\r' + '\n';
+               TextBoxReader.Text += line + Environment.NewLine; // -
+               TextBoxReader.Text += line + '\r' + '\n'; // -
             }
 
             reader.Close();
@@ -63,18 +59,18 @@ namespace WebClientWinForms
          HttpWebRequest httpask = (HttpWebRequest)ask;
          string lineone = ("Время ожидания запроса (мс) = " + ask.Timeout);
          TextBoxReader.Text = lineone;
-         TextBoxReader.Text += lineone + Environment.NewLine;
-         TextBoxReader.Text += lineone + '\r' + '\n';
+         //TextBoxReader.Text += lineone + Environment.NewLine; // -
+         //TextBoxReader.Text += lineone + '\r' + '\n'; // -
 
          TextBoxReader.Text = Environment.NewLine;
          // Задает значение, указывающее, следует ли выполнять постоянное подключение к интернет-ресурсу
          string linetwo = ("Запрос постоянно поддерживать = " + httpask.KeepAlive);
-         TextBoxReader.Text = linetwo;
+         //TextBoxReader.Text = linetwo;
          // Задает значение, указывающее, должен ли запрос следовать ответам перенаправления
          string linethree = ("Запрос поддерживает перенаправление = " + httpask.AllowAutoRedirect);
-         TextBoxReader.Text = linethree;
+         //TextBoxReader.Text = linethree;
 
-         TextBoxReader.Text = string.Format("{0:f2}", 1.0 / 3.0)+ Environment.NewLine;
+         //TextBoxReader.Text = string.Format("{0:f2}", 1.0 / 3.0)+ Environment.NewLine;
          //TextBoxReader.Text = "First line" ;
          //TextBoxReader.Text = "Second line" + Environment.NewLine;
          //TextBoxReader.Text = "Third line";
