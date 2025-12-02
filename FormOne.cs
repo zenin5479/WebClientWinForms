@@ -2,6 +2,7 @@
 using System.IO;
 using System.Net;
 using System.Windows.Forms;
+using static System.Windows.Forms.LinkLabel;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace WebClientWinForms
@@ -50,6 +51,8 @@ namespace WebClientWinForms
             while ((line = reader.ReadLine()) != null)
             {
                ListBoxReader.Items.Add(line);
+               TextBoxReader.Text += line + Environment.NewLine;
+               TextBoxReader.Text += line + '\r' + '\n';
             }
 
             reader.Close();
@@ -60,6 +63,9 @@ namespace WebClientWinForms
          HttpWebRequest httpask = (HttpWebRequest)ask;
          string lineone = ("Время ожидания запроса (мс) = " + ask.Timeout);
          TextBoxReader.Text = lineone;
+         TextBoxReader.Text += lineone + Environment.NewLine;
+         TextBoxReader.Text += lineone + '\r' + '\n';
+
          TextBoxReader.Text = Environment.NewLine;
          // Задает значение, указывающее, следует ли выполнять постоянное подключение к интернет-ресурсу
          string linetwo = ("Запрос постоянно поддерживать = " + httpask.KeepAlive);
