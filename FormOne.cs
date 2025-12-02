@@ -62,22 +62,21 @@ namespace WebClientWinForms
          TextBoxReader.Text = linethree;
 
          TextBoxReader.Text = string.Format("{0:f2}", 1.0 / 3.0);
-         TextBoxReader.Text = "First line" + Environment.NewLine;
-         TextBoxReader.Text = "Second line" + Environment.NewLine;
-         TextBoxReader.Text = "Third line";
-         TextBoxReader.Text = (string.Format("Header {0}: {1}", ask.Timeout, httpask.KeepAlive)); //
+         //TextBoxReader.Text = "First line" + Environment.NewLine;
+         //TextBoxReader.Text = "Second line" + Environment.NewLine;
+         //TextBoxReader.Text = "Third line";
+         //TextBoxReader.Text = (string.Format("Header {0}: {1}", ask.Timeout, httpask.KeepAlive)); //
 
          RichTextBoxReader.AppendText(lineone + "\n");
          RichTextBoxReader.AppendText(Environment.NewLine + linetwo);
          RichTextBoxReader.AppendText(Environment.NewLine + linethree);
-         RichTextBoxReader.AppendText(string.Format("Header {0}: {1}", ask.Timeout, httpask.KeepAlive)); //
-
+         RichTextBoxReader.AppendText(string.Format("Header {0}: {1}", ask.Timeout, httpask.KeepAlive));
          RichTextBoxReader.ScrollToCaret();
 
          ListBoxReader.Items.Add("Время ожидания запроса (мс) = " + ask.Timeout);
-         ListBoxReader.Items.Add("Request Keep Alive = " + httpask.KeepAlive);
-         ListBoxReader.Items.Add("Request AllowAutoRedirect = " + httpask.AllowAutoRedirect);
-         ListBoxReader.Items.Add(string.Format("Header {0}: {1}", ask.Timeout, httpask.KeepAlive));
+         //ListBoxReader.Items.Add("Request Keep Alive = " + httpask.KeepAlive);
+         //ListBoxReader.Items.Add("Request AllowAutoRedirect = " + httpask.AllowAutoRedirect);
+         //ListBoxReader.Items.Add(string.Format("Header {0}: {1}", ask.Timeout, httpask.KeepAlive));
       }
 
       private void ButtonClear_Click(object sender, EventArgs e)
