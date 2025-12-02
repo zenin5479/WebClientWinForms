@@ -26,7 +26,7 @@ namespace WebClientWinForms
                ListBoxReader.Items.Add(line);
                RichTextBoxReader.AppendText(line);
             }
-            
+
             scanner.Close();
          }
       }
@@ -54,9 +54,8 @@ namespace WebClientWinForms
          string lineone = ("Время ожидания запроса (мс) = " + ask.Timeout);
          TextBoxReader.Text = lineone;
          TextBoxReader.Text = Environment.NewLine;
-
          // Задает значение, указывающее, следует ли выполнять постоянное подключение к интернет-ресурсу
-         string linetwo = ("Запрос постоянно поддерживать= " + httpask.KeepAlive);
+         string linetwo = ("Запрос постоянно поддерживать = " + httpask.KeepAlive);
          TextBoxReader.Text = linetwo;
          // Задает значение, указывающее, должен ли запрос следовать ответам перенаправления
          string linethree = ("Запрос поддерживает перенаправление = " + httpask.AllowAutoRedirect);
