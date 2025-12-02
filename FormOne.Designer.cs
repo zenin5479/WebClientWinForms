@@ -32,6 +32,7 @@
          ButtonWebClient = new System.Windows.Forms.Button();
          listBox1 = new System.Windows.Forms.ListBox();
          RichTextBoxSavelog = new System.Windows.Forms.RichTextBox();
+         button1 = new System.Windows.Forms.Button();
          SuspendLayout();
          // 
          // TextBoxReader
@@ -71,11 +72,21 @@
          RichTextBoxSavelog.TabIndex = 4;
          RichTextBoxSavelog.Text = "";
          // 
+         // button1
+         // 
+         button1.Location = new System.Drawing.Point(93, 12);
+         button1.Name = "button1";
+         button1.Size = new System.Drawing.Size(75, 23);
+         button1.TabIndex = 5;
+         button1.Text = "WebClient";
+         button1.UseVisualStyleBackColor = true;
+         // 
          // FormOne
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(771, 500);
+         Controls.Add(button1);
          Controls.Add(RichTextBoxSavelog);
          Controls.Add(listBox1);
          Controls.Add(ButtonWebClient);
@@ -92,5 +103,6 @@
       private System.Windows.Forms.Button ButtonWebClient;
       private System.Windows.Forms.ListBox listBox1;
       private System.Windows.Forms.RichTextBox RichTextBoxSavelog;
+      private System.Windows.Forms.Button button1;
    }
 }

@@ -61,7 +61,7 @@ namespace WebClientWinForms
          TextBoxReader.Text = "Third line";
          TextBoxReader.Text = (string.Format("Header {0}: {1}", wrq.Timeout, hwrq.KeepAlive)); //
 
-         RichTextBoxSavelog.AppendText(lineone+"\n");
+         RichTextBoxSavelog.AppendText(lineone + "\n");
          RichTextBoxSavelog.AppendText(Environment.NewLine + linetwo);
          RichTextBoxSavelog.AppendText(Environment.NewLine + linethree);
          RichTextBoxSavelog.AppendText(string.Format("Header {0}: {1}", wrq.Timeout, hwrq.KeepAlive)); //
