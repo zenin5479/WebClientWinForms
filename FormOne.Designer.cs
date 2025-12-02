@@ -89,7 +89,7 @@
          ButtonClear.Name = "ButtonClear";
          ButtonClear.Size = new System.Drawing.Size(90, 23);
          ButtonClear.TabIndex = 6;
-         ButtonClear.Text = "WebRequest";
+         ButtonClear.Text = "Clear";
          ButtonClear.UseVisualStyleBackColor = true;
          // 
          // FormOne
