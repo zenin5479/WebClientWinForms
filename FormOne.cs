@@ -30,8 +30,6 @@ namespace WebClientWinForms
 
             scanner.Close();
          }
-
-         
       }
 
       private void ButtonWebRequest_Click(object sender, EventArgs e)
