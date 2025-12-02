@@ -82,7 +82,7 @@ namespace WebClientWinForms
       {
          TextBoxReader.Clear();
          RichTextBoxReader.Clear();
-         ListBoxReader.ClearSelected();
+         ListBoxReader.Items.Clear();
       }
    }
 }
