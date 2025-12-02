@@ -2,6 +2,7 @@
 using System.IO;
 using System.Net;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace WebClientWinForms
 {
@@ -23,12 +24,18 @@ namespace WebClientWinForms
             while ((line = reader.ReadLine()) != null)
             {
                TextBoxReader.Text = line;
+               textBox1.Text += sr.ReadLine() + Environment.NewLine;
+               textBox1.Text += sr.ReadLine() + '\r' + '\n';
                ListBoxReader.Items.Add(line);
                RichTextBoxReader.AppendText(line);
             }
 
             scanner.Close();
          }
+
+        
+
+
       }
 
       private void ButtonWebRequest_Click(object sender, EventArgs e)
@@ -61,8 +68,8 @@ namespace WebClientWinForms
          string linethree = ("Запрос поддерживает перенаправление = " + httpask.AllowAutoRedirect);
          TextBoxReader.Text = linethree;
 
-         TextBoxReader.Text = string.Format("{0:f2}", 1.0 / 3.0);
-         //TextBoxReader.Text = "First line" + Environment.NewLine;
+         TextBoxReader.Text = string.Format("{0:f2}", 1.0 / 3.0)+ Environment.NewLine;
+         //TextBoxReader.Text = "First line" ;
          //TextBoxReader.Text = "Second line" + Environment.NewLine;
          //TextBoxReader.Text = "Third line";
          //TextBoxReader.Text = (string.Format("Header {0}: {1}", ask.Timeout, httpask.KeepAlive)); //
