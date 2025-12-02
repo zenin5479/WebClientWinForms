@@ -61,6 +61,7 @@
          ListBoxReader.ItemHeight = 15;
          ListBoxReader.Location = new System.Drawing.Point(402, 41);
          ListBoxReader.Name = "ListBoxReader";
+         ListBoxReader.ScrollAlwaysVisible = true;
          ListBoxReader.Size = new System.Drawing.Size(357, 184);
          ListBoxReader.TabIndex = 3;
          // 
@@ -68,7 +69,7 @@
          // 
          RichTextBoxReader.Location = new System.Drawing.Point(12, 227);
          RichTextBoxReader.Name = "RichTextBoxReader";
-         RichTextBoxReader.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Horizontal;
+         RichTextBoxReader.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
          RichTextBoxReader.Size = new System.Drawing.Size(384, 261);
          RichTextBoxReader.TabIndex = 4;
          RichTextBoxReader.Text = "";
