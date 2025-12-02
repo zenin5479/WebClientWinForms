@@ -48,7 +48,7 @@
          // 
          ButtonWebClient.Location = new System.Drawing.Point(12, 12);
          ButtonWebClient.Name = "ButtonWebClient";
-         ButtonWebClient.Size = new System.Drawing.Size(75, 23);
+         ButtonWebClient.Size = new System.Drawing.Size(90, 23);
          ButtonWebClient.TabIndex = 2;
          ButtonWebClient.Text = "WebClient";
          ButtonWebClient.UseVisualStyleBackColor = true;
@@ -74,11 +74,11 @@
          // 
          // ButtonWebRequest
          // 
-         ButtonWebRequest.Location = new System.Drawing.Point(93, 12);
+         ButtonWebRequest.Location = new System.Drawing.Point(209, 12);
          ButtonWebRequest.Name = "ButtonWebRequest";
-         ButtonWebRequest.Size = new System.Drawing.Size(75, 23);
+         ButtonWebRequest.Size = new System.Drawing.Size(90, 23);
          ButtonWebRequest.TabIndex = 5;
-         ButtonWebRequest.Text = "WebClient";
+         ButtonWebRequest.Text = "WebRequest";
          ButtonWebRequest.UseVisualStyleBackColor = true;
          // 
          // FormOne
