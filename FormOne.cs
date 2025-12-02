@@ -31,6 +31,26 @@ namespace WebClientWinForms
             scanner.Close();
          }
 
+         
+      }
+
+      private void ButtonWebRequest_Click(object sender, EventArgs e)
+      {
+         WebRequest wrq = WebRequest.Create("https://example.com"); WebResponse wrs = wrq.GetResponse();
+         Stream strm = wrs.GetResponseStream();
+         if (strm != null)
+         {
+            StreamReader sr = new StreamReader(strm);
+            string line;
+            while ((line = sr.ReadLine()) != null)
+            {
+               listBox1.Items.Add(line);
+            }
+
+            sr.Close();
+            strm.Close();
+         }
+
          WebRequest wr = WebRequest.Create("https://example.com"); HttpWebRequest hwrq = (HttpWebRequest)wr;
 
          string lineone = ("Request Timeout (ms) = " + wr.Timeout);
@@ -58,26 +78,6 @@ namespace WebClientWinForms
          listBox1.Items.Add("Request Keep Alive = " + hwrq.KeepAlive);
          listBox1.Items.Add("Request AllowAutoRedirect = " + hwrq.AllowAutoRedirect);
          listBox1.Items.Add(string.Format("Header {0}: {1}", wr.Timeout, hwrq.KeepAlive));
-      }
-
-      private void ButtonWebRequest_Click(object sender, EventArgs e)
-      {
-         WebRequest wrq = WebRequest.Create("https://example.com"); WebResponse wrs = wrq.GetResponse();
-         Stream strm = wrs.GetResponseStream();
-         if (strm != null)
-         {
-            StreamReader sr = new StreamReader(strm);
-            string line;
-            while ((line = sr.ReadLine()) != null)
-            {
-               listBox1.Items.Add(line);
-            }
-
-            sr.Close();
-            strm.Close();
-         }
-
-
 
       }
    }
