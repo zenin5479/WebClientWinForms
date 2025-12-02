@@ -24,6 +24,7 @@ namespace WebClientWinForms
             {
                TextBoxReader.Text = line;
                ListBoxReader.Items.Add(line);
+               RichTextBoxReader.AppendText(line);
             }
 
             scanner.Close();
