@@ -10,8 +10,6 @@ namespace WebClientWinForms
       public FormOne()
       {
          InitializeComponent();
-
-
       }
 
       private void ButtonWebClient_Click(object sender, System.EventArgs e)
@@ -34,7 +32,7 @@ namespace WebClientWinForms
 
       private void ButtonWebRequest_Click(object sender, EventArgs e)
       {
-         WebRequest wrq = WebRequest.Create("https://example.com"); WebResponse wrs = wrq.GetResponse();
+         WebRequest Request = WebRequest.Create("https://example.com"); WebResponse wrs = Request.GetResponse();
          Stream strm = wrs.GetResponseStream();
          if (strm != null)
          {
