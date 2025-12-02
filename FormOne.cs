@@ -32,7 +32,8 @@ namespace WebClientWinForms
 
       private void ButtonWebRequest_Click(object sender, EventArgs e)
       {
-         WebRequest Request = WebRequest.Create("https://example.com"); WebResponse wrs = Request.GetResponse();
+         WebRequest Request = WebRequest.Create("https://example.com"); 
+         WebResponse wrs = Request.GetResponse();
          Stream strm = wrs.GetResponseStream();
          if (strm != null)
          {
