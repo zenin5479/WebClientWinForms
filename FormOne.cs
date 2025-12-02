@@ -49,33 +49,33 @@ namespace WebClientWinForms
          }
 
          WebRequest ask = WebRequest.Create("https://example.com"); 
-         HttpWebRequest hwrq = (HttpWebRequest)ask;
+         HttpWebRequest httpask = (HttpWebRequest)ask;
 
          string lineone = ("Request Timeout (ms) = " + ask.Timeout);
          TextBoxReader.Text = lineone;
          TextBoxReader.Text = Environment.NewLine;
-         string linetwo = ("Request Keep Alive = " + hwrq.KeepAlive);
+         string linetwo = ("Request Keep Alive = " + httpask.KeepAlive);
          TextBoxReader.Text = linetwo;
-         string linethree = ("Request AllowAutoRedirect = " + hwrq.AllowAutoRedirect);
+         string linethree = ("Request AllowAutoRedirect = " + httpask.AllowAutoRedirect);
          TextBoxReader.Text = linethree;
 
          TextBoxReader.Text = string.Format("{0:f2}", 1.0 / 3.0);
          TextBoxReader.Text = "First line" + Environment.NewLine;
          TextBoxReader.Text = "Second line" + Environment.NewLine;
          TextBoxReader.Text = "Third line";
-         TextBoxReader.Text = (string.Format("Header {0}: {1}", ask.Timeout, hwrq.KeepAlive)); //
+         TextBoxReader.Text = (string.Format("Header {0}: {1}", ask.Timeout, httpask.KeepAlive)); //
 
          RichTextBoxSavelog.AppendText(lineone + "\n");
          RichTextBoxSavelog.AppendText(Environment.NewLine + linetwo);
          RichTextBoxSavelog.AppendText(Environment.NewLine + linethree);
-         RichTextBoxSavelog.AppendText(string.Format("Header {0}: {1}", ask.Timeout, hwrq.KeepAlive)); //
+         RichTextBoxSavelog.AppendText(string.Format("Header {0}: {1}", ask.Timeout, httpask.KeepAlive)); //
 
          RichTextBoxSavelog.ScrollToCaret();
 
          listBox1.Items.Add("Request Timeout (ms) = " + ask.Timeout);
-         listBox1.Items.Add("Request Keep Alive = " + hwrq.KeepAlive);
-         listBox1.Items.Add("Request AllowAutoRedirect = " + hwrq.AllowAutoRedirect);
-         listBox1.Items.Add(string.Format("Header {0}: {1}", ask.Timeout, hwrq.KeepAlive));
+         listBox1.Items.Add("Request Keep Alive = " + httpask.KeepAlive);
+         listBox1.Items.Add("Request AllowAutoRedirect = " + httpask.AllowAutoRedirect);
+         listBox1.Items.Add(string.Format("Header {0}: {1}", ask.Timeout, httpask.KeepAlive));
 
       }
    }
