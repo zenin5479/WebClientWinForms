@@ -24,8 +24,8 @@ namespace WebClientWinForms
             while ((line = reader.ReadLine()) != null)
             {
                TextBoxReader.Text = line;
-               textBox1.Text += sr.ReadLine() + Environment.NewLine;
-               textBox1.Text += sr.ReadLine() + '\r' + '\n';
+               TextBoxReader.Text += line + Environment.NewLine;
+               TextBoxReader.Text += line + '\r' + '\n';
                ListBoxReader.Items.Add(line);
                RichTextBoxReader.AppendText(line);
             }
