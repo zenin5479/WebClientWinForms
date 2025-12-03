@@ -25,7 +25,7 @@ namespace WebClientWinForms
                TextBoxReader.Text = line + Environment.NewLine;
                //TextBoxReader.Text += Environment.NewLine;
                TextBoxReader.Text += Environment.NewLine;
-               TextBoxReader.Text += line + Environment.NewLine;
+               TextBoxReader.Text = line;
                //TextBoxReader.Text += line + '\r' + '\n';
                ListBoxReader.Items.Add(line);
                ListBoxReader.Items.Add(line);
