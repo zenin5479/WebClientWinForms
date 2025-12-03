@@ -22,7 +22,7 @@ namespace WebClientWinForms
             string line;
             while ((line = reader.ReadLine()) != null)
             {
-               TextBoxReader.Text = line + Environment.NewLine;
+               TextBoxReader.Text += line + Environment.NewLine;
                //TextBoxReader.Text += Environment.NewLine;
                TextBoxReader.Text += Environment.NewLine;
                TextBoxReader.Text = line;
