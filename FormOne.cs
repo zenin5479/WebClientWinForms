@@ -23,6 +23,8 @@ namespace WebClientWinForms
             while ((line = reader.ReadLine()) != null)
             {
                TextBoxReader.Text = line + Environment.NewLine;
+               //TextBoxReader.Text = "";
+               //TextBoxReader.Text = line + Environment.NewLine;
                ListBoxReader.Items.Add(line);
                ListBoxReader.Items.Add(line);
                RichTextBoxReader.AppendText(line);
@@ -30,26 +32,24 @@ namespace WebClientWinForms
             }
 
             scanner.Close();
-
-            //TextBoxReader.Text = "";
-            //TextBoxReader.Clear();
-            //TextBoxReader.Text = "Третья строка\r\nЧетвертая строка";
-            //TextBoxReader.Text += Environment.NewLine;
-            //TextBoxReader.Text = line;
-            //TextBoxReader.Text += line + '\r' + '\n';
-            //TextBoxReader.Text = "Первая строка" + Environment.NewLine;
-            //TextBoxReader.Text = Environment.NewLine;
-            //TextBoxReader.Text = "Вторая строка";
-
-            //StreamReader sr = new StreamReader("input.txt", System.Text.Encoding.Default);
-            //while (!sr.EndOfStream)
-            //{
-            //   //TextBoxReader.Text += sr.ReadLine() + Environment.NewLine;
-            //   TextBoxReader.Text += sr.ReadLine() + '\r' + '\n';
-            //}
-
-            //sr.Close();
          }
+         StreamReader sr = new StreamReader("input.txt", System.Text.Encoding.Default);
+         while (!sr.EndOfStream)
+         {
+            //TextBoxReader.Text += sr.ReadLine() + Environment.NewLine;
+            TextBoxReader.Text += sr.ReadLine() + '\r' + '\n';
+         }
+
+         sr.Close();
+         //TextBoxReader.Text = "";
+         //TextBoxReader.Clear();
+         //TextBoxReader.Text = "Третья строка\r\nЧетвертая строка";
+         //TextBoxReader.Text += Environment.NewLine;
+         //TextBoxReader.Text = line;
+         //TextBoxReader.Text += line + '\r' + '\n';
+         //TextBoxReader.Text = "Первая строка" + Environment.NewLine;
+         //TextBoxReader.Text = Environment.NewLine;
+         //TextBoxReader.Text = "Вторая строка";
       }
 
       private void ButtonWebRequest_Click(object sender, EventArgs e)
