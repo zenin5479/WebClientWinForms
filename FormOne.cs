@@ -39,24 +39,12 @@ namespace WebClientWinForms
          string two = "Вторая строка";
 
          TextBoxReader.Text = one;
-         TextBoxReader.Text = "\r" + "\n";
-         //TextBoxReader.Text += Environment.NewLine;
+
          TextBoxReader.Text = two;
 
 
-         //TextBoxReader.Text = Environment.NewLine;
-         //TextBoxReader.Text = "Вторая строка";
-
-
-         //TextBoxReader.Text = "";
          //TextBoxReader.Clear();
-         //TextBoxReader.Text = "Третья строка\r\nЧетвертая строка";
-         //TextBoxReader.Text += Environment.NewLine;
-         //TextBoxReader.Text = line;
-         //TextBoxReader.Text += line + '\r' + '\n';
-         //TextBoxReader.Text = "Первая строка" + Environment.NewLine;
-         //TextBoxReader.Text = Environment.NewLine;
-         //TextBoxReader.Text = "Вторая строка";
+        
       }
 
       private void ButtonWebRequest_Click(object sender, EventArgs e)
@@ -71,8 +59,7 @@ namespace WebClientWinForms
             while ((line = reader.ReadLine()) != null)
             {
                ListBoxReader.Items.Add(line);
-               TextBoxReader.Text += line + Environment.NewLine; // -
-               TextBoxReader.Text += line + '\r' + '\n'; // -
+               TextBoxReader.Text = line;
             }
 
             reader.Close();
