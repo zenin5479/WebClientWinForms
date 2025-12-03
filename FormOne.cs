@@ -2,6 +2,7 @@
 using System.IO;
 using System.Net;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace WebClientWinForms
 {
@@ -30,6 +31,16 @@ namespace WebClientWinForms
             }
 
             scanner.Close();
+
+            TextBoxReader.Text = "";
+            StreamReader sr = new StreamReader("input.txt", System.Text.Encoding.Default);
+            while (!sr.EndOfStream)
+            {
+               //TextBoxReader.Text += sr.ReadLine() + Environment.NewLine;
+               TextBoxReader.Text += sr.ReadLine() + '\r' + '\n';
+            }
+
+            sr.Close();
          }
       }
 
