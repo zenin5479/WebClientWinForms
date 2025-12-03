@@ -2,6 +2,7 @@
 using System.IO;
 using System.Net;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace WebClientWinForms
 {
@@ -22,9 +23,9 @@ namespace WebClientWinForms
             string line;
             while ((line = reader.ReadLine()) != null)
             {
-               TextBoxReader.Text += line + Environment.NewLine;
+               TextBoxReader.Text = line;
+               TextBoxReader.Text = "Первая строка" + Environment.NewLine + "Вторая строка";
                //TextBoxReader.Text += Environment.NewLine;
-               TextBoxReader.Text += Environment.NewLine;
                TextBoxReader.Text = line;
                //TextBoxReader.Text += line + '\r' + '\n';
                ListBoxReader.Items.Add(line);
