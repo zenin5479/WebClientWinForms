@@ -35,18 +35,15 @@ namespace WebClientWinForms
          //}
 
          string one = "Первая строка";
-
          string two = "Вторая строка";
 
-         TextBoxReader.Text = one;
-         TextBoxReader.Text += Environment.NewLine;
-
-         //TextBoxReader.Text = two;
+         TextBoxReader.Text = one + Environment.NewLine;
          TextBoxReader.AppendText(two);
-
+         TextBoxReader.AppendText(Environment.NewLine);
+         TextBoxReader.AppendText(one);
+         //TextBoxReader.Text = one;
 
          //TextBoxReader.Clear();
-
       }
 
       private void ButtonWebRequest_Click(object sender, EventArgs e)
