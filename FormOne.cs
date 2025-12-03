@@ -24,23 +24,29 @@ namespace WebClientWinForms
             while ((line = reader.ReadLine()) != null)
             {
                TextBoxReader.Text = line;
+               TextBoxReader.Text += Environment.NewLine;
+               TextBoxReader.Text += Environment.NewLine;
                TextBoxReader.Text += line + Environment.NewLine;
-               TextBoxReader.Text += line + '\r' + '\n';
+               //TextBoxReader.Text += line + '\r' + '\n';
                ListBoxReader.Items.Add(line);
+               ListBoxReader.Items.Add(line);
+               RichTextBoxReader.AppendText(line);
                RichTextBoxReader.AppendText(line);
             }
 
             scanner.Close();
 
-            TextBoxReader.Text = "";
-            StreamReader sr = new StreamReader("input.txt", System.Text.Encoding.Default);
-            while (!sr.EndOfStream)
-            {
-               //TextBoxReader.Text += sr.ReadLine() + Environment.NewLine;
-               TextBoxReader.Text += sr.ReadLine() + '\r' + '\n';
-            }
+            //TextBoxReader.Text = "";
+            //TextBoxReader.Clear();
 
-            sr.Close();
+            //StreamReader sr = new StreamReader("input.txt", System.Text.Encoding.Default);
+            //while (!sr.EndOfStream)
+            //{
+            //   //TextBoxReader.Text += sr.ReadLine() + Environment.NewLine;
+            //   TextBoxReader.Text += sr.ReadLine() + '\r' + '\n';
+            //}
+
+            //sr.Close();
          }
       }
 
