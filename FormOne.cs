@@ -23,10 +23,10 @@ namespace WebClientWinForms
             string line;
             while ((line = reader.ReadLine()) != null)
             {
-               TextBoxReader.Text = line;
+               //TextBoxReader.Text = line;
                TextBoxReader.Text = "Первая строка" + Environment.NewLine + "Вторая строка";
                //TextBoxReader.Text += Environment.NewLine;
-               TextBoxReader.Text = line;
+               //TextBoxReader.Text = line;
                //TextBoxReader.Text += line + '\r' + '\n';
                ListBoxReader.Items.Add(line);
                ListBoxReader.Items.Add(line);
