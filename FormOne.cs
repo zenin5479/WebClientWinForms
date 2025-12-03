@@ -38,8 +38,10 @@ namespace WebClientWinForms
 
          string two = "Вторая строка";
 
-         TextBoxReader.AppendText(one);
-         TextBoxReader.Text = "\r\n";
+         TextBoxReader.Text = one;
+         TextBoxReader.Text += Environment.NewLine;
+
+         //TextBoxReader.Text = two;
          TextBoxReader.AppendText(two);
 
 
