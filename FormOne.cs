@@ -14,36 +14,35 @@ namespace WebClientWinForms
 
       private void ButtonWebClient_Click(object sender, EventArgs e)
       {
-         //WebClient client = new WebClient();
-         //Stream scanner = client.OpenRead("https://example.com");
-         //if (scanner != null)
-         //{
-         //   StreamReader reader = new StreamReader(scanner);
-         //   string line;
-         //   while ((line = reader.ReadLine()) != null)
-         //   {
-         //      TextBoxReader.Text = line + Environment.NewLine;
-         //      //TextBoxReader.Text = "";
-         //      //TextBoxReader.Text = line + Environment.NewLine;
-         //      ListBoxReader.Items.Add(line);
-         //      ListBoxReader.Items.Add(line);
-         //      RichTextBoxReader.AppendText(line);
-         //      RichTextBoxReader.AppendText(line);
-         //   }
+         WebClient client = new WebClient();
+         Stream scanner = client.OpenRead("https://example.com");
+         if (scanner != null)
+         {
+            StreamReader reader = new StreamReader(scanner);
+            string line;
+            while ((line = reader.ReadLine()) != null)
+            {
+               TextBoxReader.Text = line + Environment.NewLine;
+               TextBoxReader.AppendText(line);
+               TextBoxReader.AppendText(Environment.NewLine);
 
-         //   scanner.Close();
-         //}
+               ListBoxReader.Items.Add(line);
+               ListBoxReader.Items.Add(line);
+               RichTextBoxReader.AppendText(line);
+               RichTextBoxReader.AppendText(line);
+            }
+
+            scanner.Close();
+         }
 
          string one = "Первая строка";
          string two = "Вторая строка";
-
          TextBoxReader.Text = one + Environment.NewLine;
          TextBoxReader.AppendText(two);
          TextBoxReader.AppendText(Environment.NewLine);
          TextBoxReader.AppendText(one);
-         //TextBoxReader.Text = one;
-
-         //TextBoxReader.Clear();
+         TextBoxReader.AppendText(Environment.NewLine);
+         TextBoxReader.AppendText(two);
       }
 
       private void ButtonWebRequest_Click(object sender, EventArgs e)
