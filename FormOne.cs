@@ -24,9 +24,6 @@ namespace WebClientWinForms
             while ((line = reader.ReadLine()) != null)
             {
                TextBoxReader.Text = line + Environment.NewLine;
-               TextBoxReader.Text = "Первая строка" + Environment.NewLine;
-               TextBoxReader.Text = Environment.NewLine;
-               TextBoxReader.Text ="Вторая строка";
 
                //TextBoxReader.Text = "Третья строка\r\nЧетвертая строка";
                //TextBoxReader.Text += Environment.NewLine;
@@ -39,6 +36,10 @@ namespace WebClientWinForms
             }
 
             scanner.Close();
+
+            //TextBoxReader.Text = "Первая строка" + Environment.NewLine;
+            //TextBoxReader.Text = Environment.NewLine;
+            //TextBoxReader.Text = "Вторая строка";
 
             //TextBoxReader.Text = "";
             //TextBoxReader.Clear();
