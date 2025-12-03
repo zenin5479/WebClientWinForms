@@ -25,6 +25,8 @@ namespace WebClientWinForms
             {
                //TextBoxReader.Text = line;
                TextBoxReader.Text = "Первая строка" + Environment.NewLine + "Вторая строка";
+               TextBoxReader.Text = Environment.NewLine;
+               TextBoxReader.Text = "Третья строка\r\nЧетвертая строка";
                //TextBoxReader.Text += Environment.NewLine;
                //TextBoxReader.Text = line;
                //TextBoxReader.Text += line + '\r' + '\n';
