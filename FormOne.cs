@@ -38,13 +38,13 @@ namespace WebClientWinForms
 
          string two = "Вторая строка";
 
-         TextBoxReader.Text = one;
-
-         TextBoxReader.Text = two;
+         TextBoxReader.AppendText(one);
+         TextBoxReader.Text = "\r\n";
+         TextBoxReader.AppendText(two);
 
 
          //TextBoxReader.Clear();
-        
+
       }
 
       private void ButtonWebRequest_Click(object sender, EventArgs e)
