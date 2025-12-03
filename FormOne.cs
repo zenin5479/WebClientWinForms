@@ -2,7 +2,6 @@
 using System.IO;
 using System.Net;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace WebClientWinForms
 {
@@ -24,11 +23,6 @@ namespace WebClientWinForms
             while ((line = reader.ReadLine()) != null)
             {
                TextBoxReader.Text = line + Environment.NewLine;
-
-               //TextBoxReader.Text = "Третья строка\r\nЧетвертая строка";
-               //TextBoxReader.Text += Environment.NewLine;
-               //TextBoxReader.Text = line;
-               //TextBoxReader.Text += line + '\r' + '\n';
                ListBoxReader.Items.Add(line);
                ListBoxReader.Items.Add(line);
                RichTextBoxReader.AppendText(line);
@@ -37,12 +31,15 @@ namespace WebClientWinForms
 
             scanner.Close();
 
+            //TextBoxReader.Text = "";
+            //TextBoxReader.Clear();
+            //TextBoxReader.Text = "Третья строка\r\nЧетвертая строка";
+            //TextBoxReader.Text += Environment.NewLine;
+            //TextBoxReader.Text = line;
+            //TextBoxReader.Text += line + '\r' + '\n';
             //TextBoxReader.Text = "Первая строка" + Environment.NewLine;
             //TextBoxReader.Text = Environment.NewLine;
             //TextBoxReader.Text = "Вторая строка";
-
-            //TextBoxReader.Text = "";
-            //TextBoxReader.Clear();
 
             //StreamReader sr = new StreamReader("input.txt", System.Text.Encoding.Default);
             //while (!sr.EndOfStream)
