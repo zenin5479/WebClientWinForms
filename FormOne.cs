@@ -105,12 +105,12 @@ namespace WebClientWinForms
             reader.Close();
             scanner.Close();
          }
-
-
       }
 
       private void button1_Click(object sender, EventArgs e)
       {
+         string one = "Первая строка:";
+         string two = "Вторая строка:";
          WebRequest ask = WebRequest.Create("https://example.com");
          HttpWebRequest httpask = (HttpWebRequest)ask;
          string lineone = ("Время ожидания запроса (мс) = " + ask.Timeout);
