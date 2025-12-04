@@ -34,6 +34,7 @@
          RichTextBoxReader = new System.Windows.Forms.RichTextBox();
          ButtonWebRequest = new System.Windows.Forms.Button();
          ButtonClear = new System.Windows.Forms.Button();
+         button1 = new System.Windows.Forms.Button();
          SuspendLayout();
          // 
          // TextBoxReader
@@ -94,11 +95,21 @@
          ButtonClear.UseVisualStyleBackColor = true;
          ButtonClear.Click += ButtonClear_Click;
          // 
+         // button1
+         // 
+         button1.Location = new System.Drawing.Point(204, 12);
+         button1.Name = "button1";
+         button1.Size = new System.Drawing.Size(90, 23);
+         button1.TabIndex = 7;
+         button1.Text = "WebRequest";
+         button1.UseVisualStyleBackColor = true;
+         // 
          // FormOne
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(771, 500);
+         Controls.Add(button1);
          Controls.Add(ButtonClear);
          Controls.Add(ButtonWebRequest);
          Controls.Add(RichTextBoxReader);
@@ -120,5 +131,6 @@
       private System.Windows.Forms.RichTextBox RichTextBoxReader;
       private System.Windows.Forms.Button ButtonWebRequest;
       private System.Windows.Forms.Button ButtonClear;
+      private System.Windows.Forms.Button button1;
    }
 }
