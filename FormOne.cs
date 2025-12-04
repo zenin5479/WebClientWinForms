@@ -72,8 +72,43 @@ namespace WebClientWinForms
             string line;
             while ((line = reader.ReadLine()) != null)
             {
+
+               // TextBox
+               // Добавляет строку стирая предыдущие
+               //TextBoxReader.Text = one;
+               // Добавляет строку оставляя предыдущие
+               TextBoxReader.AppendText(one);
+               // Переход на следующую строку
+               TextBoxReader.AppendText(Environment.NewLine);
+               TextBoxReader.AppendText(line);
+               TextBoxReader.AppendText(Environment.NewLine);
+               TextBoxReader.AppendText(two);
+               TextBoxReader.AppendText(Environment.NewLine);
+               TextBoxReader.AppendText(line);
+               TextBoxReader.AppendText(Environment.NewLine);
+
+               // ListBox
+               ListBoxReader.Items.Add(one);
                ListBoxReader.Items.Add(line);
-               TextBoxReader.Text = line;
+               ListBoxReader.Items.Add(two);
+               ListBoxReader.Items.Add(line);
+
+               // RichTextBox
+               RichTextBoxReader.AppendText(one);
+               RichTextBoxReader.AppendText(Environment.NewLine);
+               RichTextBoxReader.AppendText(line);
+               RichTextBoxReader.AppendText(Environment.NewLine);
+               RichTextBoxReader.AppendText(two);
+               RichTextBoxReader.AppendText(Environment.NewLine);
+               RichTextBoxReader.AppendText(line);
+               TextBoxReader.AppendText(Environment.NewLine);
+
+
+
+
+
+
+              
             }
 
             reader.Close();
