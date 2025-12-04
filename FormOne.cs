@@ -14,8 +14,8 @@ namespace WebClientWinForms
 
       private void ButtonWebClient_Click(object sender, EventArgs e)
       {
-         string one = "Первая строка";
-         string two = "Вторая строка";
+         string one = "Первая строка:";
+         string two = "Вторая строка:";
          WebClient client = new WebClient();
          Stream scanner = client.OpenRead("https://example.com");
          if (scanner != null)
@@ -61,6 +61,8 @@ namespace WebClientWinForms
 
       private void ButtonWebRequest_Click(object sender, EventArgs e)
       {
+         string one = "Первая строка:";
+         string two = "Вторая строка:";
          WebRequest request = WebRequest.Create("https://example.com");
          WebResponse response = request.GetResponse();
          Stream scanner = response.GetResponseStream();
