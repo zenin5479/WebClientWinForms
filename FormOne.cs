@@ -114,8 +114,22 @@ namespace WebClientWinForms
          WebRequest ask = WebRequest.Create("https://example.com");
          HttpWebRequest httpask = (HttpWebRequest)ask;
          string lineone = ("Время ожидания запроса (мс) = " + ask.Timeout);
-         //TextBoxReader.Text = lineone;
-         //TextBoxReader.Text = Environment.NewLine;
+         TextBoxReader.AppendText(one);
+         TextBoxReader.AppendText(Environment.NewLine);
+         TextBoxReader.Text = lineone;
+         TextBoxReader.AppendText(Environment.NewLine);
+
+
+
+         ListBoxReader.Items.Add(one);
+         TextBoxReader.AppendText(Environment.NewLine);
+         ListBoxReader.Items.Add("Время ожидания запроса (мс) = " + ask.Timeout);
+
+         //ListBoxReader.Items.Add("Request Keep Alive = " + httpask.KeepAlive);
+         //ListBoxReader.Items.Add("Request AllowAutoRedirect = " + httpask.AllowAutoRedirect);
+         //ListBoxReader.Items.Add(string.Format("Header {0}: {1}", ask.Timeout, httpask.KeepAlive));
+
+
          // Задает значение, указывающее, следует ли выполнять постоянное подключение к интернет-ресурсу
          string linetwo = ("Запрос постоянно поддерживать = " + httpask.KeepAlive);
          //TextBoxReader.Text = linetwo;
