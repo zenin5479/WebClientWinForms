@@ -119,11 +119,10 @@ namespace WebClientWinForms
          TextBoxReader.Text = lineone;
          TextBoxReader.AppendText(Environment.NewLine);
 
-
-
          ListBoxReader.Items.Add(one);
-         TextBoxReader.AppendText(Environment.NewLine);
+         ListBoxReader.Items.Add(Environment.NewLine);
          ListBoxReader.Items.Add("Время ожидания запроса (мс) = " + ask.Timeout);
+         ListBoxReader.Items.Add(Environment.NewLine);
 
          //ListBoxReader.Items.Add("Request Keep Alive = " + httpask.KeepAlive);
          //ListBoxReader.Items.Add("Request AllowAutoRedirect = " + httpask.AllowAutoRedirect);
