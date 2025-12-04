@@ -118,17 +118,16 @@ namespace WebClientWinForms
          TextBoxReader.AppendText(Environment.NewLine);
          TextBoxReader.AppendText(lineone);
          TextBoxReader.AppendText(Environment.NewLine);
+         TextBoxReader.ScrollToCaret();
 
          ListBoxReader.Items.Add(one);
          ListBoxReader.Items.Add("Время ожидания запроса (мс) = " + ask.Timeout);
 
-         RichTextBoxReader.AppendText(two);
+         RichTextBoxReader.AppendText(one);
          RichTextBoxReader.AppendText(Environment.NewLine);
-         RichTextBoxReader.AppendText(linetwo);
+         RichTextBoxReader.AppendText(lineone);
          RichTextBoxReader.AppendText(Environment.NewLine);
-
-         RichTextBoxReader.AppendText(lineone + "\n");
-         RichTextBoxReader.AppendText(Environment.NewLine + linetwo);
+         RichTextBoxReader.ScrollToCaret();
 
          // Задает значение, указывающее, следует ли выполнять постоянное подключение к интернет-ресурсу
          string linetwo = ("Запрос постоянно поддерживать = " + httpask.KeepAlive);
@@ -146,11 +145,8 @@ namespace WebClientWinForms
          //TextBoxReader.Text = string.Format("{0:f2}", 1.0 / 3.0)+ Environment.NewLine;
          //TextBoxReader.Text = (string.Format("Header {0}: {1}", ask.Timeout, httpask.KeepAlive));
 
-         RichTextBoxReader.AppendText(lineone + "\n");
-         RichTextBoxReader.AppendText(Environment.NewLine + linetwo);
-         RichTextBoxReader.AppendText(Environment.NewLine + linethree);
-         RichTextBoxReader.AppendText(string.Format("Header {0}: {1}", ask.Timeout, httpask.KeepAlive));
-         RichTextBoxReader.ScrollToCaret();
+
+
 
          //ListBoxReader.Items.Add("Request Keep Alive = " + httpask.KeepAlive);
          //ListBoxReader.Items.Add("Request AllowAutoRedirect = " + httpask.AllowAutoRedirect);
