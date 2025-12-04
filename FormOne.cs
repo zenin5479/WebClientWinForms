@@ -35,8 +35,8 @@ namespace WebClientWinForms
             scanner.Close();
          }
 
-         //string one = "Первая строка";
-         //string two = "Вторая строка";
+         string one = "Первая строка";
+         string two = "Вторая строка";
          //TextBoxReader.Text = one + Environment.NewLine;
          //TextBoxReader.AppendText(two);
          //TextBoxReader.AppendText(Environment.NewLine);
