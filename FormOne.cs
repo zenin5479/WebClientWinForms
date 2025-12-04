@@ -24,6 +24,7 @@ namespace WebClientWinForms
             {
                // Добавляет строку стирая предыдущие
                TextBoxReader.Text = line + Environment.NewLine;
+               // Добавляет строку оставляя предыдущие
                TextBoxReader.AppendText(line);
                TextBoxReader.AppendText(Environment.NewLine);
 
