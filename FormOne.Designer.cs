@@ -34,7 +34,7 @@
          RichTextBoxReader = new System.Windows.Forms.RichTextBox();
          ButtonWebRequest = new System.Windows.Forms.Button();
          ButtonClear = new System.Windows.Forms.Button();
-         button1 = new System.Windows.Forms.Button();
+         ButtonHttpWebRequest = new System.Windows.Forms.Button();
          SuspendLayout();
          // 
          // TextBoxReader
@@ -95,22 +95,22 @@
          ButtonClear.UseVisualStyleBackColor = true;
          ButtonClear.Click += ButtonClear_Click;
          // 
-         // button1
+         // ButtonHttpWebRequest
          // 
-         button1.Location = new System.Drawing.Point(204, 12);
-         button1.Name = "button1";
-         button1.Size = new System.Drawing.Size(110, 23);
-         button1.TabIndex = 7;
-         button1.Text = "HttpWebRequest";
-         button1.UseVisualStyleBackColor = true;
-         button1.Click += button1_Click;
+         ButtonHttpWebRequest.Location = new System.Drawing.Point(204, 12);
+         ButtonHttpWebRequest.Name = "ButtonHttpWebRequest";
+         ButtonHttpWebRequest.Size = new System.Drawing.Size(110, 23);
+         ButtonHttpWebRequest.TabIndex = 7;
+         ButtonHttpWebRequest.Text = "HttpWebRequest";
+         ButtonHttpWebRequest.UseVisualStyleBackColor = true;
+         ButtonHttpWebRequest.Click += button1_Click;
          // 
          // FormOne
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(771, 500);
-         Controls.Add(button1);
+         Controls.Add(ButtonHttpWebRequest);
          Controls.Add(ButtonClear);
          Controls.Add(ButtonWebRequest);
          Controls.Add(RichTextBoxReader);
@@ -131,6 +131,6 @@
       private System.Windows.Forms.RichTextBox RichTextBoxReader;
       private System.Windows.Forms.Button ButtonWebRequest;
       private System.Windows.Forms.Button ButtonClear;
-      private System.Windows.Forms.Button button1;
+      private System.Windows.Forms.Button ButtonHttpWebRequest;
    }
 }
