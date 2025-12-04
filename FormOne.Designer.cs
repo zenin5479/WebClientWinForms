@@ -103,7 +103,7 @@
          ButtonHttpWebRequest.TabIndex = 7;
          ButtonHttpWebRequest.Text = "HttpWebRequest";
          ButtonHttpWebRequest.UseVisualStyleBackColor = true;
-         ButtonHttpWebRequest.Click += button1_Click;
+         ButtonHttpWebRequest.Click += ButtonHttpWebRequest_Click;
          // 
          // FormOne
          // 
@@ -120,6 +120,7 @@
          Name = "FormOne";
          StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
          Text = "Класс WebClient";
+         Load += FormOne_Load;
          ResumeLayout(false);
          PerformLayout();
       }

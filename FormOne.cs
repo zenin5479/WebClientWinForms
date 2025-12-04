@@ -107,7 +107,7 @@ namespace WebClientWinForms
          }
       }
 
-      private void button1_Click(object sender, EventArgs e)
+      private void ButtonHttpWebRequest_Click(object sender, EventArgs e)
       {
          string one = "Первая строка:";
          string two = "Вторая строка:";
@@ -116,7 +116,7 @@ namespace WebClientWinForms
          string lineone = ("Время ожидания запроса (мс) = " + ask.Timeout);
          TextBoxReader.AppendText(one);
          TextBoxReader.AppendText(Environment.NewLine);
-         TextBoxReader.Text = lineone;
+         TextBoxReader.AppendText(lineone);
          TextBoxReader.AppendText(Environment.NewLine);
 
          ListBoxReader.Items.Add(one);
@@ -159,6 +159,11 @@ namespace WebClientWinForms
          TextBoxReader.Clear();
          RichTextBoxReader.Clear();
          ListBoxReader.Items.Clear();
+      }
+
+      private void FormOne_Load(object sender, EventArgs e)
+      {
+
       }
    }
 }
