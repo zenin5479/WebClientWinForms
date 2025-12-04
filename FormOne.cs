@@ -36,6 +36,7 @@ namespace WebClientWinForms
                TextBoxReader.AppendText(two);
                TextBoxReader.AppendText(Environment.NewLine);
                TextBoxReader.AppendText(line);
+               TextBoxReader.AppendText(Environment.NewLine);
 
                ListBoxReader.Items.Add(one);
                ListBoxReader.Items.Add(line);
@@ -49,6 +50,7 @@ namespace WebClientWinForms
                RichTextBoxReader.AppendText(two);
                RichTextBoxReader.AppendText(Environment.NewLine);
                RichTextBoxReader.AppendText(line);
+               TextBoxReader.AppendText(Environment.NewLine);
             }
 
             scanner.Close();
