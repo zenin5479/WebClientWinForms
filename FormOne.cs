@@ -41,8 +41,9 @@ namespace WebClientWinForms
          TextBoxReader.AppendText(one);
          TextBoxReader.AppendText(Environment.NewLine);
          TextBoxReader.AppendText(two);
-         TextBoxReader.AppendText(two);
          TextBoxReader.AppendText(Environment.NewLine);
+         TextBoxReader.AppendText(two);
+
       }
 
       private void ButtonWebRequest_Click(object sender, EventArgs e)
