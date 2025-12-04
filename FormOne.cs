@@ -38,7 +38,6 @@ namespace WebClientWinForms
                TextBoxReader.AppendText(line);
 
 
-               TextBoxReader.AppendText(Environment.NewLine);
 
 
 
