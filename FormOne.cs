@@ -37,10 +37,17 @@ namespace WebClientWinForms
                TextBoxReader.AppendText(Environment.NewLine);
                TextBoxReader.AppendText(line);
 
+               ListBoxReader.Items.Add(one);
                ListBoxReader.Items.Add(line);
+               ListBoxReader.Items.Add(two);
                ListBoxReader.Items.Add(line);
 
+               RichTextBoxReader.AppendText(one);
+               RichTextBoxReader.AppendText(Environment.NewLine);
                RichTextBoxReader.AppendText(line);
+               RichTextBoxReader.AppendText(Environment.NewLine);
+               RichTextBoxReader.AppendText(two);
+               RichTextBoxReader.AppendText(Environment.NewLine);
                RichTextBoxReader.AppendText(line);
             }
 
