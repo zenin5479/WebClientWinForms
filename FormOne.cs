@@ -106,6 +106,11 @@ namespace WebClientWinForms
             scanner.Close();
          }
 
+
+      }
+
+      private void button1_Click(object sender, EventArgs e)
+      {
          WebRequest ask = WebRequest.Create("https://example.com");
          HttpWebRequest httpask = (HttpWebRequest)ask;
          string lineone = ("Время ожидания запроса (мс) = " + ask.Timeout);
@@ -134,11 +139,6 @@ namespace WebClientWinForms
          //ListBoxReader.Items.Add("Request Keep Alive = " + httpask.KeepAlive);
          //ListBoxReader.Items.Add("Request AllowAutoRedirect = " + httpask.AllowAutoRedirect);
          //ListBoxReader.Items.Add(string.Format("Header {0}: {1}", ask.Timeout, httpask.KeepAlive));
-      }
-
-      private void button1_Click(object sender, EventArgs e)
-      {
-
       }
 
       private void ButtonClear_Click(object sender, EventArgs e)
