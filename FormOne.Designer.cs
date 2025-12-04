@@ -99,10 +99,11 @@
          // 
          button1.Location = new System.Drawing.Point(204, 12);
          button1.Name = "button1";
-         button1.Size = new System.Drawing.Size(90, 23);
+         button1.Size = new System.Drawing.Size(110, 23);
          button1.TabIndex = 7;
-         button1.Text = "WebRequest";
+         button1.Text = "HttpWebRequest";
          button1.UseVisualStyleBackColor = true;
+         button1.Click += button1_Click;
          // 
          // FormOne
          // 
