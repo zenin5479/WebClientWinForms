@@ -24,6 +24,7 @@ namespace WebClientWinForms
             string line;
             while ((line = reader.ReadLine()) != null)
             {
+               // TextBox
                // Добавляет строку стирая предыдущие
                //TextBoxReader.Text = one + Environment.NewLine;
                // Добавляет строку оставляя предыдущие
@@ -38,11 +39,14 @@ namespace WebClientWinForms
                TextBoxReader.AppendText(line);
                TextBoxReader.AppendText(Environment.NewLine);
 
+               // ListBox
                ListBoxReader.Items.Add(one);
+               ListBoxReader.Items.Add(Environment.NewLine);
                ListBoxReader.Items.Add(line);
                ListBoxReader.Items.Add(two);
                ListBoxReader.Items.Add(line);
 
+               // RichTextBox
                RichTextBoxReader.AppendText(one);
                RichTextBoxReader.AppendText(Environment.NewLine);
                RichTextBoxReader.AppendText(line);
