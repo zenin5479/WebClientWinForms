@@ -72,7 +72,6 @@ namespace WebClientWinForms
             string line;
             while ((line = reader.ReadLine()) != null)
             {
-
                // TextBox
                // Добавляет строку стирая предыдущие
                //TextBoxReader.Text = one;
@@ -101,14 +100,6 @@ namespace WebClientWinForms
                RichTextBoxReader.AppendText(two);
                RichTextBoxReader.AppendText(Environment.NewLine);
                RichTextBoxReader.AppendText(line);
-               TextBoxReader.AppendText(Environment.NewLine);
-
-
-
-
-
-
-              
             }
 
             reader.Close();
@@ -118,8 +109,8 @@ namespace WebClientWinForms
          WebRequest ask = WebRequest.Create("https://example.com");
          HttpWebRequest httpask = (HttpWebRequest)ask;
          string lineone = ("Время ожидания запроса (мс) = " + ask.Timeout);
-         TextBoxReader.Text = lineone;
-         TextBoxReader.Text = Environment.NewLine;
+         //TextBoxReader.Text = lineone;
+         //TextBoxReader.Text = Environment.NewLine;
          // Задает значение, указывающее, следует ли выполнять постоянное подключение к интернет-ресурсу
          string linetwo = ("Запрос постоянно поддерживать = " + httpask.KeepAlive);
          //TextBoxReader.Text = linetwo;
