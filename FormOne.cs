@@ -41,7 +41,6 @@ namespace WebClientWinForms
 
                // ListBox
                ListBoxReader.Items.Add(one);
-               ListBoxReader.Items.Add(Environment.NewLine);
                ListBoxReader.Items.Add(line);
                ListBoxReader.Items.Add(two);
                ListBoxReader.Items.Add(line);
