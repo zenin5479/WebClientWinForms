@@ -37,9 +37,12 @@ namespace WebClientWinForms
                // Перход на следующую строку
                TextBoxReader.AppendText(Environment.NewLine);
                TextBoxReader.AppendText(two);
+               TextBoxReader.AppendText(Environment.NewLine);
+               TextBoxReader.AppendText(line);
 
                ListBoxReader.Items.Add(line);
                ListBoxReader.Items.Add(line);
+
                RichTextBoxReader.AppendText(line);
                RichTextBoxReader.AppendText(line);
             }
