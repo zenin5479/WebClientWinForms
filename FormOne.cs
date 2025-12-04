@@ -35,11 +35,11 @@ namespace WebClientWinForms
             scanner.Close();
          }
 
-         string one = "Первая строка";
-         string two = "Вторая строка";
-         TextBoxReader.Text = one + Environment.NewLine;
-         TextBoxReader.AppendText(two);
-         TextBoxReader.AppendText(Environment.NewLine);
+         //string one = "Первая строка";
+         //string two = "Вторая строка";
+         //TextBoxReader.Text = one + Environment.NewLine;
+         //TextBoxReader.AppendText(two);
+         //TextBoxReader.AppendText(Environment.NewLine);
          TextBoxReader.AppendText(one);
          TextBoxReader.AppendText(Environment.NewLine);
          TextBoxReader.AppendText(two);
