@@ -136,6 +136,11 @@ namespace WebClientWinForms
          //ListBoxReader.Items.Add(string.Format("Header {0}: {1}", ask.Timeout, httpask.KeepAlive));
       }
 
+      private void button1_Click(object sender, EventArgs e)
+      {
+
+      }
+
       private void ButtonClear_Click(object sender, EventArgs e)
       {
          TextBoxReader.Clear();
@@ -144,11 +149,6 @@ namespace WebClientWinForms
       }
 
       private void FormOne_Load(object sender, EventArgs e)
-      {
-
-      }
-
-      private void button1_Click(object sender, EventArgs e)
       {
 
       }
