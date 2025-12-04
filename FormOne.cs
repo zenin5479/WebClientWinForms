@@ -22,6 +22,7 @@ namespace WebClientWinForms
             string line;
             while ((line = reader.ReadLine()) != null)
             {
+               // Добавляет строку стирая предыдущие
                TextBoxReader.Text = line + Environment.NewLine;
                TextBoxReader.AppendText(line);
                TextBoxReader.AppendText(Environment.NewLine);
