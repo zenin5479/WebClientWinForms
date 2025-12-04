@@ -36,7 +36,7 @@ namespace WebClientWinForms
                TextBoxReader.AppendText(line);
                // Перход на следующую строку
                TextBoxReader.AppendText(Environment.NewLine);
-               TextBoxReader.AppendText(line);
+               TextBoxReader.AppendText(two);
 
                ListBoxReader.Items.Add(line);
                ListBoxReader.Items.Add(line);
@@ -46,10 +46,6 @@ namespace WebClientWinForms
 
             scanner.Close();
          }
-
-         TextBoxReader.AppendText(Environment.NewLine);
-         TextBoxReader.AppendText(two);
-
       }
 
       private void ButtonWebRequest_Click(object sender, EventArgs e)
