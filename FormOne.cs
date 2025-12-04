@@ -45,10 +45,6 @@ namespace WebClientWinForms
             scanner.Close();
          }
 
-
-
-
-
          TextBoxReader.AppendText(Environment.NewLine);
          TextBoxReader.AppendText(two);
 
@@ -108,6 +104,11 @@ namespace WebClientWinForms
          TextBoxReader.Clear();
          RichTextBoxReader.Clear();
          ListBoxReader.Items.Clear();
+      }
+
+      private void FormOne_Load(object sender, EventArgs e)
+      {
+
       }
    }
 }

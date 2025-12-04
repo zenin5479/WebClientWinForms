@@ -108,6 +108,7 @@
          Name = "FormOne";
          StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
          Text = "Класс WebClient";
+         Load += FormOne_Load;
          ResumeLayout(false);
          PerformLayout();
       }
