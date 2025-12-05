@@ -125,7 +125,7 @@ namespace WebClientWinForms
          // Прокрутка ListBox вниз
          ListBoxReader.TopIndex = ListBoxReader.Items.Count - 1;
          // Scroll to the bottom, and select the last item:
-         //ListBoxReader.SelectedIndex = ListBoxReader.Items.Count - 1;
+         ListBoxReader.SelectedIndex = ListBoxReader.Items.Count - 1;
 
          RichTextBoxReader.AppendText(one);
          RichTextBoxReader.AppendText(Environment.NewLine);
