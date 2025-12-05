@@ -123,10 +123,9 @@ namespace WebClientWinForms
          ListBoxReader.Items.Add(one);
          ListBoxReader.Items.Add("Время ожидания запроса (мс) = " + ask.Timeout);
          // Прокрутка ListBox вниз
-         // Scroll to the bottom:
-         //listbox.TopIndex = listbox.Items.Count - 1;
+         ListBoxReader.TopIndex = ListBoxReader.Items.Count - 1;
          // Scroll to the bottom, and select the last item:
-         //listbox.SelectedIndex = listbox.Items.Count - 1;
+         //ListBoxReader.SelectedIndex = ListBoxReader.Items.Count - 1;
 
          RichTextBoxReader.AppendText(one);
          RichTextBoxReader.AppendText(Environment.NewLine);
