@@ -58,6 +58,7 @@ namespace WebClientWinForms
                RichTextBoxReader.AppendText(Environment.NewLine);
                RichTextBoxReader.AppendText(line);
                TextBoxReader.AppendText(Environment.NewLine);
+               RichTextBoxReader.ScrollToCaret();
             }
 
             scanner.Close();
