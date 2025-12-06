@@ -170,8 +170,13 @@ namespace WebClientWinForms
          RichTextBoxReader.AppendText(Environment.NewLine);
          RichTextBoxReader.ScrollToCaret();
 
-         TextBoxReader.AppendText(string.Format("{0:f4}", 1.0 / 3.0) + Environment.NewLine);
-         TextBoxReader.AppendText(string.Format("Header {0}: {1}", ask.Timeout, httpask.KeepAlive));
+
+         string four = string.Format("{0:f4}", 1.0 / 3.0);
+         TextBoxReader.AppendText(four);
+         TextBoxReader.AppendText(Environment.NewLine);
+         string five = string.Format("Header {0}: {1}", ask.Timeout, httpask.KeepAlive);
+         TextBoxReader.AppendText(Environment.NewLine);
+         TextBoxReader.AppendText(five);
       }
 
       private void ButtonClear_Click(object sender, EventArgs e)
