@@ -123,12 +123,14 @@ namespace WebClientWinForms
       {
          string one = "Первая строка:";
          string two = "Вторая строка:";
+         string three = "Третья строка:";
          WebRequest ask = WebRequest.Create("https://example.com");
          HttpWebRequest httpask = (HttpWebRequest)ask;
          string lineone = ("Время ожидания запроса (мс) = " + ask.Timeout);
          // Задает значение, указывающее, следует ли выполнять постоянное подключение к интернет-ресурсу
          string linetwo = ("Запрос постоянно поддерживать = " + httpask.KeepAlive);
-
+         // Задает значение, указывающее, должен ли запрос следовать ответам перенаправления
+         string linethree = ("Запрос поддерживает перенаправление = " + httpask.AllowAutoRedirect);
          TextBoxReader.AppendText(one);
          TextBoxReader.AppendText(Environment.NewLine);
          TextBoxReader.AppendText(lineone);
@@ -137,6 +139,8 @@ namespace WebClientWinForms
          TextBoxReader.AppendText(Environment.NewLine);
          TextBoxReader.AppendText(linetwo);
          TextBoxReader.AppendText(Environment.NewLine);
+
+         //TextBoxReader.Text = linethree;
          TextBoxReader.ScrollToCaret();
 
          ListBoxReader.Items.Add(one);
@@ -159,9 +163,7 @@ namespace WebClientWinForms
 
 
 
-         // Задает значение, указывающее, должен ли запрос следовать ответам перенаправления
-         string linethree = ("Запрос поддерживает перенаправление = " + httpask.AllowAutoRedirect);
-         //TextBoxReader.Text = linethree;
+
 
          //TextBoxReader.Text = string.Format("{0:f2}", 1.0 / 3.0)+ Environment.NewLine;
          //TextBoxReader.Text = (string.Format("Header {0}: {1}", ask.Timeout, httpask.KeepAlive));
