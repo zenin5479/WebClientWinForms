@@ -160,22 +160,15 @@ namespace WebClientWinForms
          RichTextBoxReader.AppendText(Environment.NewLine);
          RichTextBoxReader.AppendText(lineone);
          RichTextBoxReader.AppendText(Environment.NewLine);
-
          RichTextBoxReader.AppendText(two);
          RichTextBoxReader.AppendText(Environment.NewLine);
          RichTextBoxReader.AppendText(linetwo);
          RichTextBoxReader.AppendText(Environment.NewLine);
-
          RichTextBoxReader.AppendText(three);
          RichTextBoxReader.AppendText(Environment.NewLine);
          RichTextBoxReader.AppendText(linethree);
          RichTextBoxReader.AppendText(Environment.NewLine);
          RichTextBoxReader.ScrollToCaret();
-
-
-
-
-
 
          //TextBoxReader.Text = string.Format("{0:f2}", 1.0 / 3.0)+ Environment.NewLine;
          //TextBoxReader.Text = (string.Format("Header {0}: {1}", ask.Timeout, httpask.KeepAlive));
