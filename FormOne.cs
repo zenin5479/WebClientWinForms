@@ -158,6 +158,8 @@ namespace WebClientWinForms
          ListBoxReader.Items.Add(linetwo);
          ListBoxReader.Items.Add(three);
          ListBoxReader.Items.Add(linethree);
+         ListBoxReader.Items.Add(four);
+         ListBoxReader.Items.Add(linefour);
          // Прокрутка ListBox вниз
          ListBoxReader.TopIndex = ListBoxReader.Items.Count - 1;
          // Прокрутка ListBox вниз и выбор последнего элемента
