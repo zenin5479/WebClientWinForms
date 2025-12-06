@@ -133,12 +133,16 @@ namespace WebClientWinForms
          TextBoxReader.AppendText(Environment.NewLine);
          TextBoxReader.AppendText(lineone);
          TextBoxReader.AppendText(Environment.NewLine);
+         TextBoxReader.AppendText(two);
+         TextBoxReader.AppendText(Environment.NewLine);
          TextBoxReader.AppendText(linetwo);
          TextBoxReader.AppendText(Environment.NewLine);
          TextBoxReader.ScrollToCaret();
 
          ListBoxReader.Items.Add(one);
-         ListBoxReader.Items.Add("Время ожидания запроса (мс) = " + ask.Timeout);
+         ListBoxReader.Items.Add(lineone);
+         ListBoxReader.Items.Add(two);
+         ListBoxReader.Items.Add(linetwo);
 
 
          // Прокрутка ListBox вниз
