@@ -172,10 +172,6 @@ namespace WebClientWinForms
 
          TextBoxReader.AppendText(string.Format("{0:f4}", 1.0 / 3.0) + Environment.NewLine);
          TextBoxReader.AppendText(string.Format("Header {0}: {1}", ask.Timeout, httpask.KeepAlive));
-
-         //ListBoxReader.Items.Add("Request Keep Alive = " + httpask.KeepAlive);
-         //ListBoxReader.Items.Add("Request AllowAutoRedirect = " + httpask.AllowAutoRedirect);
-         //ListBoxReader.Items.Add(string.Format("Header {0}: {1}", ask.Timeout, httpask.KeepAlive));
       }
 
       private void ButtonClear_Click(object sender, EventArgs e)
