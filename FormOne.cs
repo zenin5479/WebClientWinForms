@@ -126,14 +126,21 @@ namespace WebClientWinForms
          WebRequest ask = WebRequest.Create("https://example.com");
          HttpWebRequest httpask = (HttpWebRequest)ask;
          string lineone = ("Время ожидания запроса (мс) = " + ask.Timeout);
+         // Задает значение, указывающее, следует ли выполнять постоянное подключение к интернет-ресурсу
+         string linetwo = ("Запрос постоянно поддерживать = " + httpask.KeepAlive);
+
          TextBoxReader.AppendText(one);
          TextBoxReader.AppendText(Environment.NewLine);
          TextBoxReader.AppendText(lineone);
+         TextBoxReader.AppendText(Environment.NewLine);
+         TextBoxReader.AppendText(linetwo);
          TextBoxReader.AppendText(Environment.NewLine);
          TextBoxReader.ScrollToCaret();
 
          ListBoxReader.Items.Add(one);
          ListBoxReader.Items.Add("Время ожидания запроса (мс) = " + ask.Timeout);
+
+
          // Прокрутка ListBox вниз
          ListBoxReader.TopIndex = ListBoxReader.Items.Count - 1;
          // Прокрутка ListBox вниз и выбор последнего элемента
@@ -145,10 +152,9 @@ namespace WebClientWinForms
          RichTextBoxReader.AppendText(Environment.NewLine);
          RichTextBoxReader.ScrollToCaret();
 
-         // Задает значение, указывающее, следует ли выполнять постоянное подключение к интернет-ресурсу
-         string linetwo = ("Запрос постоянно поддерживать = " + httpask.KeepAlive);
 
-         //TextBoxReader.Text = linetwo;
+
+
          // Задает значение, указывающее, должен ли запрос следовать ответам перенаправления
          string linethree = ("Запрос поддерживает перенаправление = " + httpask.AllowAutoRedirect);
          //TextBoxReader.Text = linethree;
