@@ -182,9 +182,6 @@ namespace WebClientWinForms
          RichTextBoxReader.AppendText(linefour);
          RichTextBoxReader.AppendText(Environment.NewLine);
          RichTextBoxReader.ScrollToCaret();
-
-
-        
       }
 
       private void ButtonClear_Click(object sender, EventArgs e)
