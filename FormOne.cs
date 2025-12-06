@@ -160,6 +160,12 @@ namespace WebClientWinForms
          RichTextBoxReader.AppendText(Environment.NewLine);
          RichTextBoxReader.AppendText(lineone);
          RichTextBoxReader.AppendText(Environment.NewLine);
+
+         RichTextBoxReader.AppendText(two);
+         RichTextBoxReader.AppendText(Environment.NewLine);
+         RichTextBoxReader.AppendText(linetwo);
+         RichTextBoxReader.AppendText(Environment.NewLine);
+
          RichTextBoxReader.AppendText(three);
          RichTextBoxReader.AppendText(Environment.NewLine);
          RichTextBoxReader.AppendText(linethree);
