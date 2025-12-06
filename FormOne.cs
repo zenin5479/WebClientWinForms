@@ -170,8 +170,8 @@ namespace WebClientWinForms
          RichTextBoxReader.AppendText(Environment.NewLine);
          RichTextBoxReader.ScrollToCaret();
 
-         //TextBoxReader.Text = string.Format("{0:f2}", 1.0 / 3.0)+ Environment.NewLine;
-         //TextBoxReader.Text = (string.Format("Header {0}: {1}", ask.Timeout, httpask.KeepAlive));
+         TextBoxReader.AppendText(string.Format("{0:f4}", 1.0 / 3.0) + Environment.NewLine);
+         TextBoxReader.AppendText(string.Format("Header {0}: {1}", ask.Timeout, httpask.KeepAlive));
 
          //ListBoxReader.Items.Add("Request Keep Alive = " + httpask.KeepAlive);
          //ListBoxReader.Items.Add("Request AllowAutoRedirect = " + httpask.AllowAutoRedirect);
