@@ -37,6 +37,7 @@ namespace WebClientWinForms
                TextBoxReader.AppendText(Environment.NewLine);
                TextBoxReader.AppendText(line);
                TextBoxReader.AppendText(Environment.NewLine);
+               TextBoxReader.ScrollToCaret();
 
                // ListBox
                ListBoxReader.Items.Add(one);
@@ -85,6 +86,7 @@ namespace WebClientWinForms
                TextBoxReader.AppendText(Environment.NewLine);
                TextBoxReader.AppendText(line);
                TextBoxReader.AppendText(Environment.NewLine);
+               TextBoxReader.ScrollToCaret();
 
                // ListBox
                ListBoxReader.Items.Add(one);
