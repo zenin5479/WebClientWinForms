@@ -124,6 +124,7 @@ namespace WebClientWinForms
          string one = "Первая строка:";
          string two = "Вторая строка:";
          string three = "Третья строка:";
+         string four = "Четвертая строка:";
          WebRequest ask = WebRequest.Create("https://example.com");
          HttpWebRequest httpask = (HttpWebRequest)ask;
          string lineone = ("Время ожидания запроса (мс) = " + ask.Timeout);
@@ -131,6 +132,8 @@ namespace WebClientWinForms
          string linetwo = ("Запрос постоянно поддерживать = " + httpask.KeepAlive);
          // Задает значение, указывающее, должен ли запрос следовать ответам перенаправления
          string linethree = ("Запрос поддерживает перенаправление = " + httpask.AllowAutoRedirect);
+         // Вывод значения разных переменных
+         string linefour = string.Format("Значения переменных: double - {0:f4}; int - {1}; bool - {2};", 8.1234, 25, false);
          TextBoxReader.AppendText(one);
          TextBoxReader.AppendText(Environment.NewLine);
          TextBoxReader.AppendText(lineone);
@@ -142,6 +145,10 @@ namespace WebClientWinForms
          TextBoxReader.AppendText(three);
          TextBoxReader.AppendText(Environment.NewLine);
          TextBoxReader.AppendText(linethree);
+         TextBoxReader.AppendText(Environment.NewLine);
+         TextBoxReader.AppendText(four);
+         TextBoxReader.AppendText(Environment.NewLine);
+         TextBoxReader.AppendText(linefour);
          TextBoxReader.AppendText(Environment.NewLine);
          TextBoxReader.ScrollToCaret();
 
@@ -170,9 +177,8 @@ namespace WebClientWinForms
          RichTextBoxReader.AppendText(Environment.NewLine);
          RichTextBoxReader.ScrollToCaret();
 
-         string four = string.Format("Значения переменных: double - {0:f4}; int - {1}; bool - {2};", 8.1234, 25, false);
-         TextBoxReader.AppendText(four);
-         TextBoxReader.AppendText(Environment.NewLine);
+
+        
       }
 
       private void ButtonClear_Click(object sender, EventArgs e)
