@@ -142,6 +142,7 @@ namespace WebClientWinForms
          TextBoxReader.AppendText(three);
          TextBoxReader.AppendText(Environment.NewLine);
          TextBoxReader.AppendText(linethree);
+         TextBoxReader.AppendText(Environment.NewLine);
          TextBoxReader.ScrollToCaret();
 
          ListBoxReader.Items.Add(one);
