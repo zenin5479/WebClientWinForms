@@ -170,12 +170,9 @@ namespace WebClientWinForms
          RichTextBoxReader.AppendText(Environment.NewLine);
          RichTextBoxReader.ScrollToCaret();
 
-         string four = string.Format("double - {0:f4}; int - {1}; bool - {2};", 10.1234, 25, false);
+         string four = string.Format("Значения переменных: double - {0:f4}; int - {1}; bool - {2};", 8.1234, 25, false);
          TextBoxReader.AppendText(four);
          TextBoxReader.AppendText(Environment.NewLine);
-         string five = string.Format("Header {0}: {1}", ask.Timeout, httpask.KeepAlive);
-         TextBoxReader.AppendText(Environment.NewLine);
-         TextBoxReader.AppendText(five);
       }
 
       private void ButtonClear_Click(object sender, EventArgs e)
