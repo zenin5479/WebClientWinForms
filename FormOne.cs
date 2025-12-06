@@ -170,8 +170,7 @@ namespace WebClientWinForms
          RichTextBoxReader.AppendText(Environment.NewLine);
          RichTextBoxReader.ScrollToCaret();
 
-
-         string four = string.Format("{0:f4}", 1.0 / 3.0);
+         string four = string.Format("double - {0:f4}; int - {1:f2}; bool - {2};", 10.1234, 25, false);
          TextBoxReader.AppendText(four);
          TextBoxReader.AppendText(Environment.NewLine);
          string five = string.Format("Header {0}: {1}", ask.Timeout, httpask.KeepAlive);
