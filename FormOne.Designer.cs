@@ -71,7 +71,7 @@
          RichTextBoxReader.Location = new System.Drawing.Point(12, 227);
          RichTextBoxReader.Name = "RichTextBoxReader";
          RichTextBoxReader.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-         RichTextBoxReader.Size = new System.Drawing.Size(384, 261);
+         RichTextBoxReader.Size = new System.Drawing.Size(384, 180);
          RichTextBoxReader.TabIndex = 4;
          RichTextBoxReader.Text = "";
          // 
@@ -109,7 +109,7 @@
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         ClientSize = new System.Drawing.Size(771, 500);
+         ClientSize = new System.Drawing.Size(771, 495);
          Controls.Add(ButtonHttpWebRequest);
          Controls.Add(ButtonClear);
          Controls.Add(ButtonWebRequest);
