@@ -43,7 +43,7 @@
          TextBoxReader.Multiline = true;
          TextBoxReader.Name = "TextBoxReader";
          TextBoxReader.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-         TextBoxReader.Size = new System.Drawing.Size(384, 180);
+         TextBoxReader.Size = new System.Drawing.Size(390, 180);
          TextBoxReader.TabIndex = 1;
          // 
          // ButtonWebClient
@@ -60,10 +60,10 @@
          // 
          ListBoxReader.FormattingEnabled = true;
          ListBoxReader.ItemHeight = 15;
-         ListBoxReader.Location = new System.Drawing.Point(402, 41);
+         ListBoxReader.Location = new System.Drawing.Point(408, 41);
          ListBoxReader.Name = "ListBoxReader";
          ListBoxReader.ScrollAlwaysVisible = true;
-         ListBoxReader.Size = new System.Drawing.Size(357, 184);
+         ListBoxReader.Size = new System.Drawing.Size(390, 184);
          ListBoxReader.TabIndex = 3;
          // 
          // RichTextBoxReader
@@ -71,7 +71,7 @@
          RichTextBoxReader.Location = new System.Drawing.Point(12, 227);
          RichTextBoxReader.Name = "RichTextBoxReader";
          RichTextBoxReader.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-         RichTextBoxReader.Size = new System.Drawing.Size(384, 180);
+         RichTextBoxReader.Size = new System.Drawing.Size(390, 180);
          RichTextBoxReader.TabIndex = 4;
          RichTextBoxReader.Text = "";
          // 
@@ -87,7 +87,7 @@
          // 
          // ButtonClear
          // 
-         ButtonClear.Location = new System.Drawing.Point(669, 12);
+         ButtonClear.Location = new System.Drawing.Point(710, 12);
          ButtonClear.Name = "ButtonClear";
          ButtonClear.Size = new System.Drawing.Size(90, 23);
          ButtonClear.TabIndex = 6;
@@ -109,7 +109,7 @@
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         ClientSize = new System.Drawing.Size(771, 495);
+         ClientSize = new System.Drawing.Size(812, 417);
          Controls.Add(ButtonHttpWebRequest);
          Controls.Add(ButtonClear);
          Controls.Add(ButtonWebRequest);
