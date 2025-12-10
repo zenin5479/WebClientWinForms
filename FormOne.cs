@@ -40,11 +40,7 @@ namespace WebClientWinForms
                ListBoxReader.TopIndex = ListBoxReader.Items.Count - 1;
 
                // RichTextBox
-               RichTextBoxReader.AppendText(one);
-               RichTextBoxReader.AppendText(Environment.NewLine);
                RichTextBoxReader.AppendText(line);
-               RichTextBoxReader.AppendText(Environment.NewLine);
-               RichTextBoxReader.AppendText(two);
                RichTextBoxReader.AppendText(Environment.NewLine);
                RichTextBoxReader.AppendText(line);
                RichTextBoxReader.AppendText(Environment.NewLine);
