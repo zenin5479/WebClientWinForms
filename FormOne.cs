@@ -29,19 +29,14 @@ namespace WebClientWinForms
                TextBoxReader.AppendText(line);
                // Переход на следующую строку
                TextBoxReader.AppendText(Environment.NewLine);
-               TextBoxReader.AppendText(line);
-               TextBoxReader.AppendText(Environment.NewLine);
                TextBoxReader.ScrollToCaret();
 
                // ListBox
-               ListBoxReader.Items.Add(line);
                ListBoxReader.Items.Add(line);
                // Прокрутка ListBox вниз
                ListBoxReader.TopIndex = ListBoxReader.Items.Count - 1;
 
                // RichTextBox
-               RichTextBoxReader.AppendText(line);
-               RichTextBoxReader.AppendText(Environment.NewLine);
                RichTextBoxReader.AppendText(line);
                RichTextBoxReader.AppendText(Environment.NewLine);
                RichTextBoxReader.ScrollToCaret();
