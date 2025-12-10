@@ -92,8 +92,6 @@ namespace WebClientWinForms
          string linetwo = ("Запрос постоянно поддерживать = " + httpask.KeepAlive);
          // Задает значение, указывающее, должен ли запрос следовать ответам перенаправления
          string linethree = ("Запрос поддерживает перенаправление = " + httpask.AllowAutoRedirect);
-
-
          TextBoxReader.AppendText(lineone);
          TextBoxReader.AppendText(Environment.NewLine);
          TextBoxReader.AppendText(linetwo);
