@@ -14,8 +14,6 @@ namespace WebClientWinForms
 
       private void ButtonWebClient_Click(object sender, EventArgs e)
       {
-         string one = "Первая строка:";
-         string two = "Вторая строка:";
          WebClient client = new WebClient();
          Stream scanner = client.OpenRead("https://example.com");
          if (scanner != null)
@@ -28,21 +26,15 @@ namespace WebClientWinForms
                // Добавляет строку стирая предыдущие
                //TextBoxReader.Text = one;
                // Добавляет строку оставляя предыдущие
-               TextBoxReader.AppendText(one);
-               // Переход на следующую строку
-               TextBoxReader.AppendText(Environment.NewLine);
                TextBoxReader.AppendText(line);
-               TextBoxReader.AppendText(Environment.NewLine);
-               TextBoxReader.AppendText(two);
+               // Переход на следующую строку
                TextBoxReader.AppendText(Environment.NewLine);
                TextBoxReader.AppendText(line);
                TextBoxReader.AppendText(Environment.NewLine);
                TextBoxReader.ScrollToCaret();
 
                // ListBox
-               ListBoxReader.Items.Add(one);
                ListBoxReader.Items.Add(line);
-               ListBoxReader.Items.Add(two);
                ListBoxReader.Items.Add(line);
                // Прокрутка ListBox вниз
                ListBoxReader.TopIndex = ListBoxReader.Items.Count - 1;
