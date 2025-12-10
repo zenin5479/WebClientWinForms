@@ -49,8 +49,6 @@ namespace WebClientWinForms
 
       private void ButtonWebRequest_Click(object sender, EventArgs e)
       {
-         string one = "Первая строка:";
-         string two = "Вторая строка:";
          WebRequest request = WebRequest.Create("https://example.com");
          WebResponse response = request.GetResponse();
          Stream scanner = response.GetResponseStream();
@@ -64,33 +62,19 @@ namespace WebClientWinForms
                // Добавляет строку стирая предыдущие
                //TextBoxReader.Text = one;
                // Добавляет строку оставляя предыдущие
-               TextBoxReader.AppendText(one);
+               TextBoxReader.AppendText(line);
                // Переход на следующую строку
-               TextBoxReader.AppendText(Environment.NewLine);
-               TextBoxReader.AppendText(line);
-               TextBoxReader.AppendText(Environment.NewLine);
-               TextBoxReader.AppendText(two);
-               TextBoxReader.AppendText(Environment.NewLine);
-               TextBoxReader.AppendText(line);
                TextBoxReader.AppendText(Environment.NewLine);
                TextBoxReader.ScrollToCaret();
 
                // ListBox
-               ListBoxReader.Items.Add(one);
-               ListBoxReader.Items.Add(line);
-               ListBoxReader.Items.Add(two);
                ListBoxReader.Items.Add(line);
                // Прокрутка ListBox вниз
                ListBoxReader.TopIndex = ListBoxReader.Items.Count - 1;
 
                // RichTextBox
-               RichTextBoxReader.AppendText(one);
-               RichTextBoxReader.AppendText(Environment.NewLine);
                RichTextBoxReader.AppendText(line);
                RichTextBoxReader.AppendText(Environment.NewLine);
-               RichTextBoxReader.AppendText(two);
-               RichTextBoxReader.AppendText(Environment.NewLine);
-               RichTextBoxReader.AppendText(line);
                RichTextBoxReader.ScrollToCaret();
             }
 
