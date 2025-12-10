@@ -121,10 +121,5 @@ namespace WebClientWinForms
          RichTextBoxReader.Clear();
          ListBoxReader.Items.Clear();
       }
-
-      private void FormOne_Load(object sender, EventArgs e)
-      {
-
-      }
    }
 }
