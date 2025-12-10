@@ -85,10 +85,6 @@ namespace WebClientWinForms
 
       private void ButtonHttpWebRequest_Click(object sender, EventArgs e)
       {
-         string one = "Первая строка:";
-         string two = "Вторая строка:";
-         string three = "Третья строка:";
-         string four = "Четвертая строка:";
          WebRequest ask = WebRequest.Create("https://example.com");
          HttpWebRequest httpask = (HttpWebRequest)ask;
          string lineone = ("Время ожидания запроса (мс) = " + ask.Timeout);
@@ -96,52 +92,27 @@ namespace WebClientWinForms
          string linetwo = ("Запрос постоянно поддерживать = " + httpask.KeepAlive);
          // Задает значение, указывающее, должен ли запрос следовать ответам перенаправления
          string linethree = ("Запрос поддерживает перенаправление = " + httpask.AllowAutoRedirect);
-         // Вывод значения разных переменных
-         string linefour = string.Format("Значения переменных: double - {0:f4}; int - {1}; bool - {2};", 8.1234, 25, false);
-         TextBoxReader.AppendText(one);
-         TextBoxReader.AppendText(Environment.NewLine);
+
+
          TextBoxReader.AppendText(lineone);
-         TextBoxReader.AppendText(Environment.NewLine);
-         TextBoxReader.AppendText(two);
          TextBoxReader.AppendText(Environment.NewLine);
          TextBoxReader.AppendText(linetwo);
          TextBoxReader.AppendText(Environment.NewLine);
-         TextBoxReader.AppendText(three);
-         TextBoxReader.AppendText(Environment.NewLine);
          TextBoxReader.AppendText(linethree);
-         TextBoxReader.AppendText(Environment.NewLine);
-         TextBoxReader.AppendText(four);
-         TextBoxReader.AppendText(Environment.NewLine);
-         TextBoxReader.AppendText(linefour);
          TextBoxReader.AppendText(Environment.NewLine);
          TextBoxReader.ScrollToCaret();
 
-         ListBoxReader.Items.Add(one);
          ListBoxReader.Items.Add(lineone);
-         ListBoxReader.Items.Add(two);
          ListBoxReader.Items.Add(linetwo);
-         ListBoxReader.Items.Add(three);
          ListBoxReader.Items.Add(linethree);
-         ListBoxReader.Items.Add(four);
-         ListBoxReader.Items.Add(linefour);
          // Прокрутка ListBox вниз
          ListBoxReader.TopIndex = ListBoxReader.Items.Count - 1;
 
-         RichTextBoxReader.AppendText(one);
-         RichTextBoxReader.AppendText(Environment.NewLine);
          RichTextBoxReader.AppendText(lineone);
-         RichTextBoxReader.AppendText(Environment.NewLine);
-         RichTextBoxReader.AppendText(two);
          RichTextBoxReader.AppendText(Environment.NewLine);
          RichTextBoxReader.AppendText(linetwo);
          RichTextBoxReader.AppendText(Environment.NewLine);
-         RichTextBoxReader.AppendText(three);
-         RichTextBoxReader.AppendText(Environment.NewLine);
          RichTextBoxReader.AppendText(linethree);
-         RichTextBoxReader.AppendText(Environment.NewLine);
-         RichTextBoxReader.AppendText(four);
-         RichTextBoxReader.AppendText(Environment.NewLine);
-         RichTextBoxReader.AppendText(linefour);
          RichTextBoxReader.AppendText(Environment.NewLine);
          RichTextBoxReader.ScrollToCaret();
       }
