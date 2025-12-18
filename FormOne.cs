@@ -50,7 +50,7 @@ namespace WebClientWinForms
 
       private void ButtonWebRequest_Click(object sender, EventArgs e)
       {
-         WebRequest request = WebRequest.Create("https://example.com");
+         WebRequest request = WebRequest.Create("http://localhost:8080/");
          //WebRequest request = WebRequest.Create("https://example.com");
          WebResponse response = request.GetResponse();
          Stream scanner = response.GetResponseStream();
@@ -87,7 +87,7 @@ namespace WebClientWinForms
 
       private void ButtonHttpWebRequest_Click(object sender, EventArgs e)
       {
-         WebRequest ask = WebRequest.Create("https://example.com");
+         WebRequest ask = WebRequest.Create("http://localhost:8080/");
          //WebRequest ask = WebRequest.Create("https://example.com");
          HttpWebRequest httpask = (HttpWebRequest)ask;
          string lineone = ("Время ожидания запроса (мс) = " + ask.Timeout);
