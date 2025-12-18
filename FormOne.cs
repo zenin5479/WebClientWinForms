@@ -15,7 +15,7 @@ namespace WebClientWinForms
       private void ButtonWebClient_Click(object sender, EventArgs e)
       {
          WebClient client = new WebClient();
-         Stream scanner = client.OpenRead("http://localhost:8080/");
+         Stream scanner = client.OpenRead("http://localhost:8080/test");
          //Stream scanner = client.OpenRead("https://example.com");
          if (scanner != null)
          {
