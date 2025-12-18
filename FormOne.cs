@@ -51,6 +51,7 @@ namespace WebClientWinForms
       private void ButtonWebRequest_Click(object sender, EventArgs e)
       {
          WebRequest request = WebRequest.Create("https://example.com");
+         //WebRequest request = WebRequest.Create("https://example.com");
          WebResponse response = request.GetResponse();
          Stream scanner = response.GetResponseStream();
          if (scanner != null)
@@ -87,6 +88,7 @@ namespace WebClientWinForms
       private void ButtonHttpWebRequest_Click(object sender, EventArgs e)
       {
          WebRequest ask = WebRequest.Create("https://example.com");
+         //WebRequest ask = WebRequest.Create("https://example.com");
          HttpWebRequest httpask = (HttpWebRequest)ask;
          string lineone = ("Время ожидания запроса (мс) = " + ask.Timeout);
          // Задает значение, указывающее, следует ли выполнять постоянное подключение к интернет-ресурсу
