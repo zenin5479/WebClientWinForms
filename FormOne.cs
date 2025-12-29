@@ -28,6 +28,7 @@ namespace WebClientWinForms
                TextBoxReader.AppendText(line);
                // Переход на следующую строку
                TextBoxReader.AppendText(Environment.NewLine);
+               // Прокрутка TextBox вниз
                TextBoxReader.ScrollToCaret();
 
                // ListBox
@@ -63,6 +64,7 @@ namespace WebClientWinForms
                TextBoxReader.AppendText(line);
                // Переход на следующую строку
                TextBoxReader.AppendText(Environment.NewLine);
+               // Прокрутка TextBox вниз
                TextBoxReader.ScrollToCaret();
 
                // ListBox
@@ -97,6 +99,7 @@ namespace WebClientWinForms
          TextBoxReader.AppendText(Environment.NewLine);
          TextBoxReader.AppendText(linethree);
          TextBoxReader.AppendText(Environment.NewLine);
+         // Прокрутка TextBox вниз
          TextBoxReader.ScrollToCaret();
 
          ListBoxReader.Items.Add(lineone);
