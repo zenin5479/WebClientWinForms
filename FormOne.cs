@@ -114,6 +114,7 @@ namespace WebClientWinForms
          RichTextBoxReader.AppendText(Environment.NewLine);
          RichTextBoxReader.AppendText(linethree);
          RichTextBoxReader.AppendText(Environment.NewLine);
+         // Прокрутка RichTextBox вниз
          RichTextBoxReader.ScrollToCaret();
       }
 
