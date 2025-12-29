@@ -39,6 +39,7 @@ namespace WebClientWinForms
                // RichTextBox
                RichTextBoxReader.AppendText(line);
                RichTextBoxReader.AppendText(Environment.NewLine);
+               // Прокрутка RichTextBox вниз
                RichTextBoxReader.ScrollToCaret();
             }
 
@@ -62,7 +63,6 @@ namespace WebClientWinForms
                // TextBox
                // Добавляет строку оставляя предыдущие
                TextBoxReader.AppendText(line);
-               // Переход на следующую строку
                TextBoxReader.AppendText(Environment.NewLine);
                // Прокрутка TextBox вниз
                TextBoxReader.ScrollToCaret();
@@ -75,6 +75,7 @@ namespace WebClientWinForms
                // RichTextBox
                RichTextBoxReader.AppendText(line);
                RichTextBoxReader.AppendText(Environment.NewLine);
+               // Прокрутка RichTextBox вниз
                RichTextBoxReader.ScrollToCaret();
             }
 
