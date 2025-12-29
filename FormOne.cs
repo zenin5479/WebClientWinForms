@@ -26,7 +26,6 @@ namespace WebClientWinForms
                // TextBox
                // Добавляет строку оставляя предыдущие
                TextBoxReader.AppendText(line);
-               // Переход на следующую строку
                TextBoxReader.AppendText(Environment.NewLine);
                // Прокрутка TextBox вниз
                TextBoxReader.ScrollToCaret();
