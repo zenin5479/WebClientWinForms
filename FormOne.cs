@@ -83,7 +83,7 @@ namespace WebClientWinForms
 
       private void ButtonHttpWebRequest_Click(object sender, EventArgs e)
       {
-         //WebRequest ask = WebRequest.Create("http://localhost:8080/");
+         
          WebRequest ask = WebRequest.Create("https://example.com");
          HttpWebRequest httpask = (HttpWebRequest)ask;
          string lineone = ("Время ожидания запроса (мс) = " + ask.Timeout);
