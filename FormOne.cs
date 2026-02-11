@@ -48,7 +48,6 @@ namespace WebClientWinForms
 
       private void ButtonWebRequest_Click(object sender, EventArgs e)
       {
-         
          WebRequest request = WebRequest.Create("https://example.com");
          WebResponse response = request.GetResponse();
          Stream scanner = response.GetResponseStream();
